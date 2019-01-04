@@ -25,7 +25,7 @@
 #include "stm32f4xx_syscfg.h"
 #include "misc.h"
 
-/* Configure pins to be interrupts */
+/* ____Configure pins to be interrupts_____ */
 void Configure_PA0(void) {
     /* Set variables used */
     GPIO_InitTypeDef GPIO_InitStruct;

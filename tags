@@ -1,0 +1,166 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AHBPrescTable	system_stm32f4xx.c	/^__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};$/;"	v
+ALL_LED_OFF	main.c	6;"	d	file:
+ALL_LED_ON	main.c	5;"	d	file:
+APP_TX_BUF_SIZE	usbd_cdc_vcp.c	201;"	d	file:
+APP_Tx_Buffer	usbd_cdc_vcp.c	/^uint8_t APP_Tx_Buffer[APP_TX_BUF_SIZE];$/;"	v
+APP_tx_ptr_head	usbd_cdc_vcp.c	/^uint32_t APP_tx_ptr_head;$/;"	v
+APP_tx_ptr_tail	usbd_cdc_vcp.c	/^uint32_t APP_tx_ptr_tail;$/;"	v
+BLUE_LED_OFF	main.c	10;"	d	file:
+BLUE_LED_ON	main.c	9;"	d	file:
+BUTTON_CLK	stm32f4_discovery.c	/^const uint32_t BUTTON_CLK[BUTTONn] = {USER_BUTTON_GPIO_CLK };$/;"	v
+BUTTON_EXTI_LINE	stm32f4_discovery.c	/^const uint16_t BUTTON_EXTI_LINE[BUTTONn] = {USER_BUTTON_EXTI_LINE };$/;"	v
+BUTTON_IRQn	stm32f4_discovery.c	/^const uint8_t BUTTON_IRQn[BUTTONn] = {USER_BUTTON_EXTI_IRQn };$/;"	v
+BUTTON_PIN	stm32f4_discovery.c	/^const uint16_t BUTTON_PIN[BUTTONn] = {USER_BUTTON_PIN }; $/;"	v
+BUTTON_PIN_SOURCE	stm32f4_discovery.c	/^const uint8_t BUTTON_PIN_SOURCE[BUTTONn] = {USER_BUTTON_EXTI_PIN_SOURCE }; $/;"	v
+BUTTON_PORT	stm32f4_discovery.c	/^GPIO_TypeDef* BUTTON_PORT[BUTTONn] = {USER_BUTTON_GPIO_PORT }; $/;"	v
+BUTTON_PORT_SOURCE	stm32f4_discovery.c	/^const uint8_t BUTTON_PORT_SOURCE[BUTTONn] = {USER_BUTTON_EXTI_PORT_SOURCE};$/;"	v
+BusFault_Handler	stm32f4xx_it.c	/^void BusFault_Handler(void)$/;"	f
+CCR1_Val	timer.c	/^__IO	uint16_t CCR1_Val = 13600;		\/* 136 --> 5us *\/$/;"	v
+ConvertedValue	main.c	/^int ConvertedValue = 0; \/\/Converted value readed from ADC$/;"	v
+CopyDataInit	startup_stm32f40xx.s	/^CopyDataInit:$/;"	l
+CopyDataInit	startup_stm32f4xx.s	/^CopyDataInit:$/;"	l
+DOORSTATE	main.c	19;"	d	file:
+DebugMon_Handler	stm32f4xx_it.c	/^void DebugMon_Handler(void)$/;"	f
+Default_Handler	startup_stm32f40xx.s	/^Default_Handler:$/;"	l
+Default_Handler	startup_stm32f4xx.s	/^Default_Handler:$/;"	l
+DoorState	main.c	/^void DoorState(void)$/;"	f
+EVAL_COM_IRQHandler	usbd_cdc_vcp.c	/^void EVAL_COM_IRQHandler(void) {$/;"	f
+FillZerobss	startup_stm32f40xx.s	/^FillZerobss:$/;"	l
+FillZerobss	startup_stm32f4xx.s	/^FillZerobss:$/;"	l
+GPIO_CLK	stm32f4_discovery.c	/^const uint32_t GPIO_CLK[LEDn] = {LED4_GPIO_CLK, LED3_GPIO_CLK, LED5_GPIO_CLK,$/;"	v
+GPIO_PIN	stm32f4_discovery.c	/^const uint16_t GPIO_PIN[LEDn] = {LED4_PIN, LED3_PIN, LED5_PIN,$/;"	v
+GPIO_PORT	stm32f4_discovery.c	/^GPIO_TypeDef* GPIO_PORT[LEDn] = {LED4_GPIO_PORT, LED3_GPIO_PORT, LED5_GPIO_PORT,$/;"	v
+GREEN_LED_OFF	main.c	14;"	d	file:
+GREEN_LED_ON	main.c	13;"	d	file:
+HardFault_Handler	stm32f4xx_it.c	/^void HardFault_Handler(void)$/;"	f
+Infinite_Loop	startup_stm32f40xx.s	/^Infinite_Loop:$/;"	l
+Infinite_Loop	startup_stm32f4xx.s	/^Infinite_Loop:$/;"	l
+LEDs_init	main.c	/^void LEDs_init(void)$/;"	f
+LoopCopyDataInit	startup_stm32f40xx.s	/^LoopCopyDataInit:$/;"	l
+LoopCopyDataInit	startup_stm32f4xx.s	/^LoopCopyDataInit:$/;"	l
+LoopFillZerobss	startup_stm32f40xx.s	/^LoopFillZerobss:$/;"	l
+LoopFillZerobss	startup_stm32f4xx.s	/^LoopFillZerobss:$/;"	l
+MemManage_Handler	stm32f4xx_it.c	/^void MemManage_Handler(void)$/;"	f
+MyKey	main _button1.c	/^    uint8_t MyKey = PRESSED_BUTTON_NONE;$/;"	v
+MyUserKeyState	main _button1.c	/^    uint8_t  MyUserKeyState = 0;$/;"	v
+NMI_Handler	stm32f4xx_it.c	/^void NMI_Handler(void)$/;"	f
+NVIC_InitStructure	stm32f4_discovery.c	/^NVIC_InitTypeDef   NVIC_InitStructure;$/;"	v
+OTG_FS_WKUP_IRQHandler	stm32f4xx_it.c	/^void OTG_FS_WKUP_IRQHandler(void)$/;"	f
+OTG_HS_EP1_IN_IRQHandler	stm32f4xx_it.c	/^void OTG_HS_EP1_IN_IRQHandler(void)$/;"	f
+OTG_HS_EP1_OUT_IRQHandler	stm32f4xx_it.c	/^void OTG_HS_EP1_OUT_IRQHandler(void)$/;"	f
+OTG_HS_IRQHandler	stm32f4xx_it.c	/^void OTG_HS_IRQHandler(void)$/;"	f
+OTG_HS_WKUP_IRQHandler	stm32f4xx_it.c	/^void OTG_HS_WKUP_IRQHandler(void)$/;"	f
+PLLI2S_N	system_stm32f4xx.c	168;"	d	file:
+PLLI2S_R	system_stm32f4xx.c	169;"	d	file:
+PLL_M	system_stm32f4xx.c	156;"	d	file:
+PLL_N	system_stm32f4xx.c	157;"	d	file:
+PLL_P	system_stm32f4xx.c	160;"	d	file:
+PLL_Q	system_stm32f4xx.c	163;"	d	file:
+PRESSED_BUTTON_NONE	main _button1.c	8;"	d	file:
+PRESSED_BUTTON_USER	main _button1.c	9;"	d	file:
+PendSV_Handler	stm32f4xx_it.c	/^void PendSV_Handler(void)$/;"	f
+RED_LED_OFF	main.c	8;"	d	file:
+RED_LED_ON	main.c	7;"	d	file:
+Read_User_Button	main _button1.c	/^uint8_t  Read_User_Button(void)$/;"	f
+Reset_Handler	startup_stm32f40xx.s	/^Reset_Handler:  $/;"	l
+Reset_Handler	startup_stm32f4xx.s	/^Reset_Handler:$/;"	l
+START_I2SCLOCK	system_stm32f4xx.c	167;"	d	file:
+STM_EVAL_LEDInit	stm32f4_discovery.c	/^void STM_EVAL_LEDInit(Led_TypeDef Led)$/;"	f
+STM_EVAL_LEDOff	stm32f4_discovery.c	/^void STM_EVAL_LEDOff(Led_TypeDef Led)$/;"	f
+STM_EVAL_LEDOn	stm32f4_discovery.c	/^void STM_EVAL_LEDOn(Led_TypeDef Led)$/;"	f
+STM_EVAL_LEDToggle	stm32f4_discovery.c	/^void STM_EVAL_LEDToggle(Led_TypeDef Led)$/;"	f
+STM_EVAL_PBGetState	stm32f4_discovery.c	/^uint32_t STM_EVAL_PBGetState(Button_TypeDef Button)$/;"	f
+STM_EVAL_PBInit	stm32f4_discovery.c	/^void STM_EVAL_PBInit(Button_TypeDef Button, ButtonMode_TypeDef Button_Mode)$/;"	f
+SVC_Handler	stm32f4xx_it.c	/^void SVC_Handler(void)$/;"	f
+SetSysClock	system_stm32f4xx.c	/^static void SetSysClock(void)$/;"	f	file:
+SysTick_Handler	main.c	/^void SysTick_Handler(void)\/\/1ms$/;"	f
+SystemCoreClock	system_stm32f4xx.c	/^uint32_t SystemCoreClock = 168000000;$/;"	v
+SystemCoreClockUpdate	system_stm32f4xx.c	/^void SystemCoreClockUpdate(void)$/;"	f
+SystemInit	system_stm32f4xx.c	/^void SystemInit(void)$/;"	f
+SystemInit_ExtMemCtl	system_stm32f4xx.c	/^void SystemInit_ExtMemCtl(void)$/;"	f
+TIM3_IRQHandler	timer.c	/^void TIM3_IRQHandler(void)$/;"	f
+TIMER3_Config	timer.c	/^void TIMER3_Config(void)$/;"	f
+USART_InitStructure	usbd_cdc_vcp.c	/^USART_InitTypeDef USART_InitStructure;$/;"	v
+USBD_CONFIGURATION_FS_STRING	usbd_desc.c	70;"	d	file:
+USBD_CONFIGURATION_HS_STRING	usbd_desc.c	67;"	d	file:
+USBD_INTERFACE_FS_STRING	usbd_desc.c	71;"	d	file:
+USBD_INTERFACE_HS_STRING	usbd_desc.c	68;"	d	file:
+USBD_LANGID_STRING	usbd_desc.c	58;"	d	file:
+USBD_MANUFACTURER_STRING	usbd_desc.c	59;"	d	file:
+USBD_PID	usbd_desc.c	53;"	d	file:
+USBD_PRODUCT_FS_STRING	usbd_desc.c	64;"	d	file:
+USBD_PRODUCT_HS_STRING	usbd_desc.c	61;"	d	file:
+USBD_SERIALNUMBER_FS_STRING	usbd_desc.c	65;"	d	file:
+USBD_SERIALNUMBER_HS_STRING	usbd_desc.c	62;"	d	file:
+USBD_USR_ConfigStrDescriptor	usbd_desc.c	/^uint8_t *  USBD_USR_ConfigStrDescriptor( uint8_t speed , uint16_t *length)$/;"	f
+USBD_USR_DeviceConfigured	usbd_usr.c	/^void USBD_USR_DeviceConfigured (void)$/;"	f
+USBD_USR_DeviceConnected	usbd_usr.c	/^void USBD_USR_DeviceConnected (void)$/;"	f
+USBD_USR_DeviceDescriptor	usbd_desc.c	/^uint8_t *  USBD_USR_DeviceDescriptor( uint8_t speed , uint16_t *length)$/;"	f
+USBD_USR_DeviceDisconnected	usbd_usr.c	/^void USBD_USR_DeviceDisconnected (void)$/;"	f
+USBD_USR_DeviceReset	usbd_usr.c	/^void USBD_USR_DeviceReset(uint8_t speed )$/;"	f
+USBD_USR_DeviceResumed	usbd_usr.c	/^void USBD_USR_DeviceResumed(void)$/;"	f
+USBD_USR_DeviceSuspended	usbd_usr.c	/^void USBD_USR_DeviceSuspended(void)$/;"	f
+USBD_USR_Init	usbd_usr.c	/^void USBD_USR_Init(void)$/;"	f
+USBD_USR_InterfaceStrDescriptor	usbd_desc.c	/^uint8_t *  USBD_USR_InterfaceStrDescriptor( uint8_t speed , uint16_t *length)$/;"	f
+USBD_USR_LangIDStrDescriptor	usbd_desc.c	/^uint8_t *  USBD_USR_LangIDStrDescriptor( uint8_t speed , uint16_t *length)$/;"	f
+USBD_USR_ManufacturerStrDescriptor	usbd_desc.c	/^uint8_t *  USBD_USR_ManufacturerStrDescriptor( uint8_t speed , uint16_t *length)$/;"	f
+USBD_USR_ProductStrDescriptor	usbd_desc.c	/^uint8_t *  USBD_USR_ProductStrDescriptor( uint8_t speed , uint16_t *length)$/;"	f
+USBD_USR_SerialStrDescriptor	usbd_desc.c	/^uint8_t *  USBD_USR_SerialStrDescriptor( uint8_t speed , uint16_t *length)$/;"	f
+USBD_VID	usbd_desc.c	51;"	d	file:
+USB_OTG_BSP_ConfigVBUS	usb_bsp.c	/^void USB_OTG_BSP_ConfigVBUS(USB_OTG_CORE_HANDLE *pdev) {$/;"	f
+USB_OTG_BSP_DriveVBUS	usb_bsp.c	/^void USB_OTG_BSP_DriveVBUS(USB_OTG_CORE_HANDLE *pdev,uint8_t state) {$/;"	f
+USB_OTG_BSP_EnableInterrupt	usb_bsp.c	/^void USB_OTG_BSP_EnableInterrupt(USB_OTG_CORE_HANDLE *pdev)$/;"	f
+USB_OTG_BSP_Init	usb_bsp.c	/^void USB_OTG_BSP_Init(USB_OTG_CORE_HANDLE *pdev)$/;"	f
+USB_OTG_BSP_mDelay	usb_bsp.c	/^void USB_OTG_BSP_mDelay (const uint32_t msec)$/;"	f
+USB_OTG_BSP_uDelay	usb_bsp.c	/^void USB_OTG_BSP_uDelay (const uint32_t usec)$/;"	f
+USR_cb	usbd_usr.c	/^USBD_Usr_cb_TypeDef USR_cb =$/;"	v
+USR_desc	usbd_desc.c	/^USBD_DEVICE USR_desc =$/;"	v
+UsageFault_Handler	stm32f4xx_it.c	/^void UsageFault_Handler(void)$/;"	f
+VCP_Ctrl	usbd_cdc_vcp.c	/^static uint16_t VCP_Ctrl(uint32_t Cmd, uint8_t* Buf, uint32_t Len) {$/;"	f	file:
+VCP_DataRx	usbd_cdc_vcp.c	/^static uint16_t VCP_DataRx(uint8_t* Buf, uint32_t Len) {$/;"	f	file:
+VCP_DataTx	usbd_cdc_vcp.c	/^static uint16_t VCP_DataTx(uint8_t* Buf, uint32_t Len) {$/;"	f	file:
+VCP_DeInit	usbd_cdc_vcp.c	/^static uint16_t VCP_DeInit(void) {$/;"	f	file:
+VCP_Init	usbd_cdc_vcp.c	/^static uint16_t VCP_Init(void) {$/;"	f	file:
+VCP_fops	usbd_cdc_vcp.c	/^CDC_IF_Prop_TypeDef VCP_fops = { VCP_Init, VCP_DeInit, VCP_Ctrl, VCP_DataTx,$/;"	v
+VCP_get_char	usbd_cdc_vcp.c	/^int VCP_get_char(uint8_t *buf) {$/;"	f
+VCP_get_string	usbd_cdc_vcp.c	/^int VCP_get_string(uint8_t *buf) {$/;"	f
+VCP_put_char	usbd_cdc_vcp.c	/^void VCP_put_char(uint8_t buf) {$/;"	f
+VCP_send_buffer	usbd_cdc_vcp.c	/^void VCP_send_buffer(uint8_t* buf, int len) {$/;"	f
+VCP_send_str	usbd_cdc_vcp.c	/^void VCP_send_str(uint8_t* buf) {$/;"	f
+VECT_TAB_OFFSET	system_stm32f4xx.c	150;"	d	file:
+YELLOW_LED_OFF	main.c	12;"	d	file:
+YELLOW_LED_ON	main.c	11;"	d	file:
+__ALIGN_END	usbd_desc.c	/^__ALIGN_BEGIN uint8_t USBD_DeviceDesc[USB_SIZ_DEVICE_DESC] __ALIGN_END =$/;"	v
+__ALIGN_END	usbd_desc.c	/^__ALIGN_BEGIN uint8_t USBD_DeviceQualifierDesc[USB_LEN_DEV_QUALIFIER_DESC] __ALIGN_END =$/;"	v
+__ALIGN_END	usbd_desc.c	/^__ALIGN_BEGIN uint8_t USBD_LangIDDesc[USB_SIZ_STRING_LANGID] __ALIGN_END =$/;"	v
+__errno	syscalls.c	/^int __errno;$/;"	v
+_close	syscalls.c	/^int _close(int file) {$/;"	f
+_fstat	syscalls.c	/^int _fstat(int file, struct stat *st) {$/;"	f
+_isatty	syscalls.c	/^int _isatty(int file) {$/;"	f
+_lseek	syscalls.c	/^int _lseek(int file, int ptr, int dir) {$/;"	f
+_open	syscalls.c	/^int _open(const char *name, int flags, int mode) {$/;"	f
+_read	syscalls.c	/^int _read(int file, char *ptr, int len) {$/;"	f
+_sbrk_r	syscalls.c	/^caddr_t _sbrk_r (struct _reent *r, int incr) {$/;"	f
+_write	syscalls.c	/^int _write(int file, char *ptr, int len) {$/;"	f
+adc_configure	main.c	/^void adc_configure(){$/;"	f
+adc_convert	main.c	/^ int adc_convert(){$/;"	f
+coreTimer	main _button1.c	/^void coreTimer(volatile uint32_t times) {$/;"	f
+counter	timer.c	/^int counter;$/;"	v
+delay	main.c	15;"	d	file:
+delay_count	main.c	/^uint16_t delay_count=0;$/;"	v
+delay_ms	main.c	/^void delay_ms(uint16_t delay_temp)$/;"	f
+door_close	door.c	/^void door_close(void)$/;"	f
+door_init	door.c	/^void door_init(void)$/;"	f
+door_open	door.c	/^void door_open(void)$/;"	f
+g_pfnVectors	startup_stm32f40xx.s	/^g_pfnVectors:$/;"	l
+g_pfnVectors	startup_stm32f4xx.s	/^g_pfnVectors:$/;"	l
+linecoding	usbd_cdc_vcp.c	/^LINE_CODING linecoding = {$/;"	v
+main	main _button1.c	/^int main(void)$/;"	f
+main	main.c	/^int main(void) {$/;"	f
+ms_delay	delay.c	/^void ms_delay(int ms)$/;"	f

@@ -5,14 +5,14 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 AHBPrescTable	system_stm32f4xx.c	/^__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};$/;"	v
-ALL_LED_OFF	main.c	6;"	d	file:
-ALL_LED_ON	main.c	5;"	d	file:
+ALL_LED_OFF	main.c	5;"	d	file:
+ALL_LED_ON	main.c	4;"	d	file:
 APP_TX_BUF_SIZE	usbd_cdc_vcp.c	201;"	d	file:
 APP_Tx_Buffer	usbd_cdc_vcp.c	/^uint8_t APP_Tx_Buffer[APP_TX_BUF_SIZE];$/;"	v
 APP_tx_ptr_head	usbd_cdc_vcp.c	/^uint32_t APP_tx_ptr_head;$/;"	v
 APP_tx_ptr_tail	usbd_cdc_vcp.c	/^uint32_t APP_tx_ptr_tail;$/;"	v
-BLUE_LED_OFF	main.c	10;"	d	file:
-BLUE_LED_ON	main.c	9;"	d	file:
+BLUE_LED_OFF	main.c	9;"	d	file:
+BLUE_LED_ON	main.c	8;"	d	file:
 BUTTON_CLK	stm32f4_discovery.c	/^const uint32_t BUTTON_CLK[BUTTONn] = {USER_BUTTON_GPIO_CLK };$/;"	v
 BUTTON_EXTI_LINE	stm32f4_discovery.c	/^const uint16_t BUTTON_EXTI_LINE[BUTTONn] = {USER_BUTTON_EXTI_LINE };$/;"	v
 BUTTON_IRQn	stm32f4_discovery.c	/^const uint8_t BUTTON_IRQn[BUTTONn] = {USER_BUTTON_EXTI_IRQn };$/;"	v
@@ -22,26 +22,32 @@ BUTTON_PORT	stm32f4_discovery.c	/^GPIO_TypeDef* BUTTON_PORT[BUTTONn] = {USER_BUT
 BUTTON_PORT_SOURCE	stm32f4_discovery.c	/^const uint8_t BUTTON_PORT_SOURCE[BUTTONn] = {USER_BUTTON_EXTI_PORT_SOURCE};$/;"	v
 BusFault_Handler	stm32f4xx_it.c	/^void BusFault_Handler(void)$/;"	f
 CCR1_Val	timer.c	/^__IO	uint16_t CCR1_Val = 13600;		\/* 136 --> 5us *\/$/;"	v
+Configure_PA0	main.c	/^void Configure_PA0(void) {$/;"	f
+Configure_PB12	main.c	/^void Configure_PB12(void) {$/;"	f
 ConvertedValue	main.c	/^int ConvertedValue = 0; \/\/Converted value readed from ADC$/;"	v
 CopyDataInit	startup_stm32f40xx.s	/^CopyDataInit:$/;"	l
 CopyDataInit	startup_stm32f4xx.s	/^CopyDataInit:$/;"	l
-DOORSTATE	main.c	19;"	d	file:
 DebugMon_Handler	stm32f4xx_it.c	/^void DebugMon_Handler(void)$/;"	f
 Default_Handler	startup_stm32f40xx.s	/^Default_Handler:$/;"	l
 Default_Handler	startup_stm32f4xx.s	/^Default_Handler:$/;"	l
-DoorState	main.c	/^void DoorState(void)$/;"	f
+Door_Close	door.c	/^void Door_Close(Door_TypeDef Door)$/;"	f
+Door_Open	door.c	/^void Door_Open(Door_TypeDef Door)$/;"	f
 EVAL_COM_IRQHandler	usbd_cdc_vcp.c	/^void EVAL_COM_IRQHandler(void) {$/;"	f
+EXTI0_IRQHandler	main.c	/^void EXTI0_IRQHandler(void) {$/;"	f
+EXTI15_10_IRQHandler	main.c	/^void EXTI15_10_IRQHandler(void) {$/;"	f
 FillZerobss	startup_stm32f40xx.s	/^FillZerobss:$/;"	l
 FillZerobss	startup_stm32f4xx.s	/^FillZerobss:$/;"	l
+GPIO_CLK	door.c	/^const uint32_t GPIO_CLK[DOORn] = {FrontDoor_GPIO_CLK, BuckDoor_GPIO_CLK, OutsideDoor_GPIO_CLK,$/;"	v
 GPIO_CLK	stm32f4_discovery.c	/^const uint32_t GPIO_CLK[LEDn] = {LED4_GPIO_CLK, LED3_GPIO_CLK, LED5_GPIO_CLK,$/;"	v
+GPIO_PIN	door.c	/^const uint16_t GPIO_PIN[DOORn] = {FrontDoor_PIN, BuckDoor_PIN, WindowDoor_PIN,$/;"	v
 GPIO_PIN	stm32f4_discovery.c	/^const uint16_t GPIO_PIN[LEDn] = {LED4_PIN, LED3_PIN, LED5_PIN,$/;"	v
+GPIO_PORT	door.c	/^GPIO_TypeDef* GPIO_PORT[DOORn] = {FrontDoor_GPIO_PORT, BuckDoor_GPIO_PORT, WindowDoor_GPIO_PORT,$/;"	v
 GPIO_PORT	stm32f4_discovery.c	/^GPIO_TypeDef* GPIO_PORT[LEDn] = {LED4_GPIO_PORT, LED3_GPIO_PORT, LED5_GPIO_PORT,$/;"	v
-GREEN_LED_OFF	main.c	14;"	d	file:
-GREEN_LED_ON	main.c	13;"	d	file:
+GREEN_LED_OFF	main.c	13;"	d	file:
+GREEN_LED_ON	main.c	12;"	d	file:
 HardFault_Handler	stm32f4xx_it.c	/^void HardFault_Handler(void)$/;"	f
 Infinite_Loop	startup_stm32f40xx.s	/^Infinite_Loop:$/;"	l
 Infinite_Loop	startup_stm32f4xx.s	/^Infinite_Loop:$/;"	l
-LEDs_init	main.c	/^void LEDs_init(void)$/;"	f
 LoopCopyDataInit	startup_stm32f40xx.s	/^LoopCopyDataInit:$/;"	l
 LoopCopyDataInit	startup_stm32f4xx.s	/^LoopCopyDataInit:$/;"	l
 LoopFillZerobss	startup_stm32f40xx.s	/^LoopFillZerobss:$/;"	l
@@ -65,8 +71,8 @@ PLL_Q	system_stm32f4xx.c	163;"	d	file:
 PRESSED_BUTTON_NONE	main _button1.c	8;"	d	file:
 PRESSED_BUTTON_USER	main _button1.c	9;"	d	file:
 PendSV_Handler	stm32f4xx_it.c	/^void PendSV_Handler(void)$/;"	f
-RED_LED_OFF	main.c	8;"	d	file:
-RED_LED_ON	main.c	7;"	d	file:
+RED_LED_OFF	main.c	7;"	d	file:
+RED_LED_ON	main.c	6;"	d	file:
 Read_User_Button	main _button1.c	/^uint8_t  Read_User_Button(void)$/;"	f
 Reset_Handler	startup_stm32f40xx.s	/^Reset_Handler:  $/;"	l
 Reset_Handler	startup_stm32f4xx.s	/^Reset_Handler:$/;"	l
@@ -134,8 +140,8 @@ VCP_put_char	usbd_cdc_vcp.c	/^void VCP_put_char(uint8_t buf) {$/;"	f
 VCP_send_buffer	usbd_cdc_vcp.c	/^void VCP_send_buffer(uint8_t* buf, int len) {$/;"	f
 VCP_send_str	usbd_cdc_vcp.c	/^void VCP_send_str(uint8_t* buf) {$/;"	f
 VECT_TAB_OFFSET	system_stm32f4xx.c	150;"	d	file:
-YELLOW_LED_OFF	main.c	12;"	d	file:
-YELLOW_LED_ON	main.c	11;"	d	file:
+YELLOW_LED_OFF	main.c	11;"	d	file:
+YELLOW_LED_ON	main.c	10;"	d	file:
 __ALIGN_END	usbd_desc.c	/^__ALIGN_BEGIN uint8_t USBD_DeviceDesc[USB_SIZ_DEVICE_DESC] __ALIGN_END =$/;"	v
 __ALIGN_END	usbd_desc.c	/^__ALIGN_BEGIN uint8_t USBD_DeviceQualifierDesc[USB_LEN_DEV_QUALIFIER_DESC] __ALIGN_END =$/;"	v
 __ALIGN_END	usbd_desc.c	/^__ALIGN_BEGIN uint8_t USBD_LangIDDesc[USB_SIZ_STRING_LANGID] __ALIGN_END =$/;"	v
@@ -152,12 +158,10 @@ adc_configure	main.c	/^void adc_configure(){$/;"	f
 adc_convert	main.c	/^ int adc_convert(){$/;"	f
 coreTimer	main _button1.c	/^void coreTimer(volatile uint32_t times) {$/;"	f
 counter	timer.c	/^int counter;$/;"	v
-delay	main.c	15;"	d	file:
+delay	main.c	14;"	d	file:
 delay_count	main.c	/^uint16_t delay_count=0;$/;"	v
 delay_ms	main.c	/^void delay_ms(uint16_t delay_temp)$/;"	f
-door_close	door.c	/^void door_close(void)$/;"	f
-door_init	door.c	/^void door_init(void)$/;"	f
-door_open	door.c	/^void door_open(void)$/;"	f
+doors_init	door.c	/^void doors_init(Door_TypeDef Door)$/;"	f
 g_pfnVectors	startup_stm32f40xx.s	/^g_pfnVectors:$/;"	l
 g_pfnVectors	startup_stm32f4xx.s	/^g_pfnVectors:$/;"	l
 linecoding	usbd_cdc_vcp.c	/^LINE_CODING linecoding = {$/;"	v

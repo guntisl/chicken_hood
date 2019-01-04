@@ -14,7 +14,7 @@ set(sources
     usbd_desc.c
     usbd_usr.c
     startup_stm32f4xx.s
-    stm32f4_discovery.c    
+    #    stm32f4_discovery.c    
 )
 
 # GCC optimization level: use -O0 in debug build, otherwise -O2

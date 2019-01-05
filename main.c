@@ -1,32 +1,14 @@
 //#define USE_STDPERIPH_DRIVER
-#include "stm32f4xx.h"
-#include "stm32f4xx_conf.h"
-#define ALL_LED_ON() GPIO_SetBits(GPIOD, GPIO_Pin_12|GPIO_Pin_13|GPIO_Pin_14|GPIO_Pin_15)
-#define ALL_LED_OFF() GPIO_ResetBits(GPIOD, GPIO_Pin_12|GPIO_Pin_13|GPIO_Pin_14|GPIO_Pin_15)  
-#define RED_LED_ON() GPIO_SetBits(GPIOD, GPIO_Pin_14)
-#define RED_LED_OFF() GPIO_ResetBits(GPIOD, GPIO_Pin_14)
-#define BLUE_LED_ON() GPIO_SetBits(GPIOD, GPIO_Pin_15)                                                                                                                                                   
-#define BLUE_LED_OFF() GPIO_ResetBits(GPIOD, GPIO_Pin_15)
-#define YELLOW_LED_ON() GPIO_SetBits(GPIOD, GPIO_Pin_13)                                                                                                                                                   
-#define YELLOW_LED_OFF() GPIO_ResetBits(GPIOD, GPIO_Pin_13)
-#define GREEN_LED_ON() GPIO_SetBits(GPIOD, GPIO_Pin_12)                                                                                                                                                   
-#define GREEN_LED_OFF() GPIO_ResetBits(GPIOD, GPIO_Pin_12)
-#define delay 200                                                                                                                        
-
-//#define BUTTON_READ()   GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)
-
-//#define DOORSTATE()   GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)
-
-#include "stm32f4xx_adc.h"
-//#include "stm32f4xx_gpio.h"
-#include "stm32f4xx_rcc.h"
-#include "stm32f4xx_exti.h"
-#include "stm32f4xx_syscfg.h"
-#include "misc.h"
+//#include "stm32f4xx.h"
+//#include "stm32f4xx_conf.h"
+//#include "stm32f4xx_adc.h"
+//#include "stm32f4xx_rcc.h"
+//#include "stm32f4xx_exti.h"
+//#include "stm32f4xx_syscfg.h"
+//#include "misc.h"
 #include "door.h"
 
 
-GPIO_InitTypeDef Doors_InitStructure;
 
 /*Configure pins to be interrupts */
 void Configure_PA0(void) {
@@ -126,14 +108,13 @@ void Configure_PB12(void) {
 
 
 /* Set interrupt handlers */
-/* Handle PD0 interrupt */
+/* Handle PA0 interrupt */
 void EXTI0_IRQHandler(void) {
     /* Make sure that interrupt flag is set */
     if (EXTI_GetITStatus(EXTI_Line0) != RESET) {
-            /* Do your stuff when PD0 is changed */
+            /* Do your stuff when PA0 is changed */
             
-Doors_Open(FrontDoor);
-Doors_Open(OutsideDoor);
+Doors_Close(FrontDoor);
             
             /* Clear interrupt flag */
             EXTI_ClearITPendingBit(EXTI_Line0);
@@ -146,7 +127,6 @@ void EXTI15_10_IRQHandler(void) {
     if (EXTI_GetITStatus(EXTI_Line12) != RESET) {
             /* Do your stuff when PB12 is changed */
             
-Doors_Close(FrontDoor);
 Doors_Close(OutsideDoor);
             
             /* Clear interrupt flag */
@@ -158,8 +138,12 @@ Doors_Close(OutsideDoor);
 
 
 int ConvertedValue = 0; //Converted value readed from ADC
+int ConvertedValueOffset = 0;
 
-
+int day_time = 1;
+int night_time = 1;
+int time_mode = 1;
+int Value_Offset = 0;
 void adc_configure(){
  ADC_InitTypeDef ADC_init_structure; //Structure for adc confguration
  GPIO_InitTypeDef GPIO_initStructre; //Structure for analog input pin
@@ -195,58 +179,26 @@ ADC_Cmd(ADC1,ENABLE);
 
 
 
-//void DoorState(void);
-//void ButtonRead(void);
-uint16_t delay_count=0;
-
-//#include "core_cmInstr.h"
-void SysTick_Handler(void)//1ms
-{
-    if (delay_count >0)
-    {
-        delay_count--;
-    }
-}
 //----------------------------------------------------------
 //
 //-----------------------------------------------------------
-void delay_ms(uint16_t delay_temp)
-{
-    delay_count = delay_temp;
-
-    while (delay_count) {
-        
-    }
-
-}
-
-
-
-//
-//--------------------------------------------------------------------
-/*
-void doors_init(void)
-{
-    GPIO_InitTypeDef Doors_InitStructure;                                                                                                                                                                         
-  
-    RCC_AHB1PeriphClockCmd(FrontDoor_GPIO_CLK, ENABLE);                                                                                                                                                   
-  //  SysTick_Config(SystemCoreClock/1000); //1ms
-    Doors_InitStructure.GPIO_Pin = FrontDoor_PIN|BuckDoor_PIN|WindowDoor_PIN|OutsideDoor_PIN;
-    Doors_InitStructure.GPIO_Mode = GPIO_Mode_OUT;                                                                                                                                                                
-    Doors_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
-    Doors_InitStructure.GPIO_OType = GPIO_OType_PP;
-    Doors_InitStructure.GPIO_PuPd = GPIO_PuPd_NOPULL;
-    GPIO_Init(GPIOD, &Doors_InitStructure);
-}
-*/
 
 
 
 
 int main(void) {
 
+int *day_time_pointer;
+day_time_pointer = &day_time;
 
+int *night_time_pointer;
+night_time_pointer = &night_time;
 
+int *time_mode_pointer;
+time_mode_pointer = &time_mode;
+
+int *Value_Offset_pointer;
+Value_Offset_pointer = &Value_Offset;
  adc_configure();   //Start configuration
 
    // LEDs_init();
@@ -255,96 +207,45 @@ int main(void) {
   //  SysTick_Config(SystemCoreClock/1000); //1ms
   /* System init */
      SystemInit();
-            /* Configure PD0 as interrupt */
+            /* Configure PA0 as interrupt */
      Configure_PA0();
                 /* Configure PB12 as interrupt */
      Configure_PB12();
 
 
-            // GPIOD initialization as an output for orange LED (GPIOD13)
-    // and blue LED (GPIOD15)
-
-
-
-
-
 
 while(1)
-{
-
-    //    GPIO_ToggleBits(GPIOD, GPIO_Pin_13);
-      //  delay_ms(500);
-
-//        GREEN_LED_ON();
-Doors_Close(OutsideDoor);
-        delay_ms(500);
-Doors_Open(OutsideDoor);
-  //      GREEN_LED_OFF();
-
+    {
     ConvertedValue = adc_convert();//Read the ADC converted value
-//    DoorState();
-//    ButtonRead();
-/*   
--if doors free and doors close and  adc = day ==>> doors open
---else if free and adc = night and doors open  === >> doors close 
-if temp = cold ==>> warmon
-else ===>> warm off
+    ConvertedValueOffset = ConvertedValue + *Value_Offset_pointer;
+    
+    if (ConvertedValueOffset > 2900)
+        {
 
-if adc = night and flag =0 lampOn 3h and flag 1
-if adc = day ==>  flag 0
+            *time_mode_pointer = 1;
+        if (((*time_mode_pointer) == 1) && ((*day_time_pointer) == 1) ) 
+        {
+            Doors_Open(FrontDoor);
+            *day_time_pointer = 0;
+            *night_time_pointer = 1;
+            *Value_Offset_pointer = 100;
+        }
+        }
+    else if (ConvertedValueOffset < 2900)
+        {
+        
+            *time_mode_pointer = 0;
+        if ((*time_mode_pointer == 0) && (*night_time_pointer == 1) ) 
+        {
+            Doors_Open(OutsideDoor);
+            *time_mode_pointer = 1;
+            *day_time_pointer = 1;
+            *night_time_pointer = 0;
+            *Value_Offset_pointer = -100;
+        }
+        }
+        }
+    }
 
 
-
-*/
-//    if (DOORSTATE() == 1) 
-//    {
-//    RED_LED_ON();
-//    }
-//    else if   (DOORSTATE() == 0) 
-//    {
-//
-//    ALL_LED_ON();
-//    delay_ms(500); 
-//   // YELLOW_LED_OFF();
-//    //for (i=0;i<2000000;i++){}//delay_ms(delay);
-//    ALL_LED_OFF();
-//    delay_ms(500);
-//
-//
-//    }
-}
-
-}
-//void ButtonRead(void)
-//{
-//
-//    GPIO_InitTypeDef GPIO_But_init;                                                                                                                                                                         
-//                                                                                                                                                                        
-//  
-//    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);                                                                                                                                                   
-//  //  SysTick_Config(SystemCoreClock/1000); //1ms
-//    GPIO_But_init.GPIO_Pin = GPIO_Pin_0;
-//    GPIO_But_init.GPIO_Mode = GPIO_Mode_IN;                                                                                                                                                                
-//    GPIO_But_init.GPIO_Speed = GPIO_Speed_2MHz;
-//    GPIO_But_init.GPIO_OType = GPIO_OType_PP;
-//    GPIO_But_init.GPIO_PuPd = GPIO_PuPd_NOPULL;
-//    GPIO_Init(GPIOA, &GPIO_But_init);
-//}
-//
-
-//void DoorState(void)
-//{
-//
-//    GPIO_InitTypeDef DoorState_init;                                                                                                                                                                         
-//                                                                                                                                                                        
-//  
-//    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);                                                                                                                                                   
-//  //  SysTick_Config(SystemCoreClock/1000); //1ms
-//    DoorState_init.GPIO_Pin = GPIO_Pin_0;
-//    DoorState_init.GPIO_Mode = GPIO_Mode_IN;                                                                                                                                                                
-//    DoorState_init.GPIO_Speed = GPIO_Speed_2MHz;
-//    DoorState_init.GPIO_OType = GPIO_OType_PP;
-//    DoorState_init.GPIO_PuPd = GPIO_PuPd_NOPULL;
-//    GPIO_Init(GPIOA, &DoorState_init);
-//}
 

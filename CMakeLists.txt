@@ -2,19 +2,11 @@
 set(sources
 
     main.c
-    timer.c
-    #    stm32f4xx_it.c
-    button.c
-    delay.c
+    interupt.c
     door.c
-    syscalls.c
+    adc.c
     system_stm32f4xx.c
-    usb_bsp.c
-    usbd_cdc_vcp.c
-    usbd_desc.c
-    usbd_usr.c
     startup_stm32f4xx.s
-    #    stm32f4_discovery.c    
 )
 
 # GCC optimization level: use -O0 in debug build, otherwise -O2

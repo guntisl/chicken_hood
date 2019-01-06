@@ -1,105 +1,99 @@
 
 //#include "stm32f4xx.h"
-#include "door.h"
+#include "interupt.h"
 
 
-GPIO_TypeDef* GPIO_PORT[DOORn] = {FrontDoor_GPIO_PORT, BuckDoor_GPIO_PORT, WindowDoor_GPIO_PORT,
-                                 OutsideDoor_GPIO_PORT};
-const uint16_t GPIO_PIN[DOORn] = {FrontDoor_PIN, BuckDoor_PIN, WindowDoor_PIN,
-                                 OutsideDoor_PIN};
-const uint32_t GPIO_CLK[DOORn] = {FrontDoor_GPIO_CLK, BuckDoor_GPIO_CLK, OutsideDoor_GPIO_CLK,
-                                 WindowDoor_GPIO_CLK};
-
-/**
-  * @brief Configure Doors connected GPIO .
-  * @param  Doors: Specifies the Doors to be set on. 
-  *   This parameter can be one of following parameters:
-  *     @arg FrontDoors
-  *     @arg BuckDoors
-  *     @arg OutsideDoors
-  *     @arg WindowDoors
-  * @retval None
-
-*/
-void Doors_Init(Door_TypeDef Door)
-{
-
-    GPIO_InitTypeDef Doors_InitStructure;
-
-    /* Enable the Doors GPIO  Clock */
-    RCC_AHB1PeriphClockCmd(GPIO_CLK[Door], ENABLE);
-    Doors_InitStructure.GPIO_Pin = GPIO_PIN[Door];
-    Doors_InitStructure.GPIO_OType = GPIO_OType_PP;
-    Doors_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
-    Doors_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-    GPIO_Init(GPIO_PORT[Door], &Doors_InitStructure);
-}
-
-
-/**
-  * @brief  Turns selected LED On.
-  * @param  Led: Specifies the Led to be set on. 
-  *   This parameter can be one of following parameters:
-  *     @arg LED4
-  *     @arg LED3
-  *     @arg LED5
-  *     @arg LED6  
-  * @retval None
-
-*/
-
-
-
-void Doors_Open(Door_TypeDef Door)
-{
+/*Configure pins to be interrupts */
+void Configure_PA0(void) {
+    /* Set variables used */
+    GPIO_InitTypeDef GPIO_InitStruct;
+    EXTI_InitTypeDef EXTI_InitStruct;
+    NVIC_InitTypeDef NVIC_InitStruct;
     
+    /* Enable clock for GPIOA */
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOA, ENABLE);
+    /* Enable clock for SYSCFG */
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_SYSCFG, ENABLE);
+    
+    /* Set pin as input */
+    GPIO_InitStruct.GPIO_Mode = GPIO_Mode_IN;
+    GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
+    GPIO_InitStruct.GPIO_Pin = GPIO_Pin_0;
+    GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_DOWN;
+    GPIO_InitStruct.GPIO_Speed = GPIO_Speed_100MHz;
+    GPIO_Init(GPIOA, &GPIO_InitStruct);
+    
+    /* Tell system that you will use PA0 for EXTI_Line0 */
+    SYSCFG_EXTILineConfig(EXTI_PortSourceGPIOA, EXTI_PinSource0);
+    
+    /* PA0 is connected to EXTI_Line0 */
+    EXTI_InitStruct.EXTI_Line = EXTI_Line0;
+    /* Enable interrupt */
+    EXTI_InitStruct.EXTI_LineCmd = ENABLE;
+    /* Interrupt mode */
+    EXTI_InitStruct.EXTI_Mode = EXTI_Mode_Interrupt;
+    /* Triggers on rising and falling edge */
+    EXTI_InitStruct.EXTI_Trigger = EXTI_Trigger_Rising_Falling;
+    /* Add to EXTI */
+    EXTI_Init(&EXTI_InitStruct);
 
-  GPIO_PORT[Door]->BSRRL = GPIO_PIN[Door];
-  
+    /* Add IRQ vector to NVIC */
+    /* PD0 is connected to EXTI_Line0, which has EXTI0_IRQn vector */
+    NVIC_InitStruct.NVIC_IRQChannel = EXTI0_IRQn;
+    /* Set priority */
+    NVIC_InitStruct.NVIC_IRQChannelPreemptionPriority = 0x00;
+    /* Set sub priority */
+    NVIC_InitStruct.NVIC_IRQChannelSubPriority = 0x00;
+    /* Enable interrupt */
+    NVIC_InitStruct.NVIC_IRQChannelCmd = ENABLE;
+    /* Add to NVIC */
+
+    NVIC_Init(&NVIC_InitStruct);
 }
 
 
+void Configure_PB12(void) {
+    /* Set variables used */
+    GPIO_InitTypeDef GPIO_InitStruct;
+    EXTI_InitTypeDef EXTI_InitStruct;
+    NVIC_InitTypeDef NVIC_InitStruct;
+    
+    /* Enable clock for GPIOB */
+    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);
+    /* Enable clock for SYSCFG */
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_SYSCFG, ENABLE);
+    
+    /* Set pin as input */
+    GPIO_InitStruct.GPIO_Mode = GPIO_Mode_IN;
+    GPIO_InitStruct.GPIO_OType = GPIO_OType_PP;
+    GPIO_InitStruct.GPIO_Pin = GPIO_Pin_12;
+    GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_UP;
+    GPIO_InitStruct.GPIO_Speed = GPIO_Speed_100MHz;
+    GPIO_Init(GPIOB, &GPIO_InitStruct);
+    
+    /* Tell system that you will use PB12 for EXTI_Line12 */
+    SYSCFG_EXTILineConfig(EXTI_PortSourceGPIOB, EXTI_PinSource12);
+    
+    /* PB12 is connected to EXTI_Line12 */
+    EXTI_InitStruct.EXTI_Line = EXTI_Line12;
+    /* Enable interrupt */
+    EXTI_InitStruct.EXTI_LineCmd = ENABLE;
+    /* Interrupt mode */
+    EXTI_InitStruct.EXTI_Mode = EXTI_Mode_Interrupt;
+    /* Triggers on rising and falling edge */
+    EXTI_InitStruct.EXTI_Trigger = EXTI_Trigger_Rising_Falling;
+    /* Add to EXTI */
+    EXTI_Init(&EXTI_InitStruct);
 
-void Doors_Close(Door_TypeDef Door)
-{
-  GPIO_PORT[Door]->BSRRH = GPIO_PIN[Door];  
+    /* Add IRQ vector to NVIC */
+    /* PB12 is connected to EXTI_Line12, which has EXTI15_10_IRQn vector */
+    NVIC_InitStruct.NVIC_IRQChannel = EXTI15_10_IRQn;
+    /* Set priority */
+    NVIC_InitStruct.NVIC_IRQChannelPreemptionPriority = 0x00;
+    /* Set sub priority */
+    NVIC_InitStruct.NVIC_IRQChannelSubPriority = 0x01;
+    /* Enable interrupt */
+    NVIC_InitStruct.NVIC_IRQChannelCmd = ENABLE;
+    /* Add to NVIC */
+    NVIC_Init(&NVIC_InitStruct);
 }
-
-
-
-
-
-
-
-
-/*
-void door_init(void)
-{
-
-
-    RCC->AHB1ENR |= RCC_AHB1ENR_GPIODEN;  // enable the clock to GPIOD
-    __asm("dsb");                         // stall instruction pipeline, until instruction completes, as
-                                          //    per Errata 2.1.13, "Delay after an RCC peripheral clock enabling"
-    GPIOD->MODER = (1 << 30);             // set pin 13 to be general purpose output
-
-
-
-}
-
-
-
-void door_open(void)
-{
-
-
-       GPIOD->ODR = (1 << 15);           // Toggle the pin 
-}
-
-
-void door_close(void)
-{
-
-
-       GPIOD->ODR = (0 << 15);           // Toggle the pin 
-
-}*/

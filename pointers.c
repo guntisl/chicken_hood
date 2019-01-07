@@ -5,13 +5,13 @@ int starting_values(void){
 
 
 
-int day_time = 1;
-int night_time = 1;
-int time_mode = 1;
-int Value_Offset = 0;
+uint8_t day_time = 1U;
+uint8_t night_time = 1U;
+uint8_t time_mode = 1U;
+uint8_t Value_Offset = 0U;
 
-int ConvertedValue = 0; //Converted value readed from ADC
-int ConvertedValueOffset = 0;
+uint8_t ConvertedValue = 0U; //Converted value readed from ADC
+uint8_t ConvertedValueOffset = 0U;
 }
 
 void pointers_init(void) {

@@ -4,7 +4,7 @@ set(sources
     main.c
     interupt.c
     door.c
-    adc.c
+    #    adc.c
     system_stm32f4xx.c
     startup_stm32f4xx.s
 )

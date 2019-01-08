@@ -4,6 +4,7 @@
 
 
 
+uint16_t ADC3ConvertedValue[5] ;
 void adc_configure(void){
 
 

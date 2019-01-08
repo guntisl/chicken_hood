@@ -2,6 +2,34 @@
 //#include "stm32f4xx.h"
 #include "interupt.h"
 
+#include "door.h"
+
+/* Set interrupt handlers */
+/* Handle PA0 interrupt */
+void EXTI0_IRQHandler(void) {
+    /* Make sure that interrupt flag is set */
+    if (EXTI_GetITStatus(EXTI_Line0) != RESET) {
+            /* Do your stuff when PA0 is changed */
+            
+        Doors_Close(OutsideDoor);
+            
+            /* Clear interrupt flag */
+            EXTI_ClearITPendingBit(EXTI_Line0);
+        }
+}
+
+/* Handle PB12 interrupt */
+void EXTI15_10_IRQHandler(void) {
+    /* Make sure that interrupt flag is set */
+    if (EXTI_GetITStatus(EXTI_Line12) != RESET) {
+            /* Do your stuff when PB12 is changed */
+            
+        Doors_Close(FrontDoor);
+            
+            /* Clear interrupt flag */
+            EXTI_ClearITPendingBit(EXTI_Line12);
+        }
+}
 
 /*Configure pins to be interrupts */
 void Configure_PA0(void) {

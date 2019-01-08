@@ -6,7 +6,7 @@
 #include "stm32f4xx_rcc.h"
 #include "stm32f4xx_exti.h"
 #include "misc.h"
-
+#include "stm32f4_discovery.h"
 /* Set interrupt handlers */
 /* Handle PA0 interrupt */
 void EXTI0_IRQHandler(void) {
@@ -14,7 +14,7 @@ void EXTI0_IRQHandler(void) {
     if (EXTI_GetITStatus(EXTI_Line0) != RESET) {
             /* Do your stuff when PA0 is changed */
             
-        Doors_Close(FrontDoor);
+        Doors_Close(OutsideDoor);
             
             /* Clear interrupt flag */
             EXTI_ClearITPendingBit(EXTI_Line0);
@@ -27,7 +27,7 @@ void EXTI15_10_IRQHandler(void) {
     if (EXTI_GetITStatus(EXTI_Line12) != RESET) {
             /* Do your stuff when PB12 is changed */
             
-        Doors_Close(OutsideDoor);
+        Doors_Close(FrontDoor);
             
             /* Clear interrupt flag */
             EXTI_ClearITPendingBit(EXTI_Line12);
@@ -37,8 +37,8 @@ void EXTI15_10_IRQHandler(void) {
 
 
 
-uint8_t volatile ConvertedValue = 0; //Converted value readed from ADC
-uint8_t volatile ConvertedValueOffset = 0;
+uint32_t volatile ConvertedValue = 0; //Converted value readed from ADC
+uint32_t volatile ConvertedValueOffset = 0;
 
 
 
@@ -116,7 +116,13 @@ ADC_RegularChannelConfig(ADC3, ADC_Channel_1,  5, ADC_SampleTime_144Cycles);//PA
 /* Enable DMA request after last transfer (Single-ADC mode) */
 ADC_DMARequestAfterLastTransferCmd(ADC3, ENABLE);
 
+/* Enable ADC3 DMA */
+ADC_DMACmd(ADC3, ENABLE);
 
+/* Enable ADC3 */
+ADC_Cmd(ADC3, ENABLE);
+/* Start ADC3 Software Conversion */
+ADC_SoftwareStartConv(ADC3);
 uint32_t volatile *day_time_pointer;
 day_time_pointer = &day_time;
 
@@ -137,13 +143,14 @@ Value_Offset_pointer = &Value_Offset;
   /* System init */
      SystemInit();
 
-
+Configure_PA0();
+Configure_PB12();
 
 while(1)
     {
    
 
-    ADC3ConvertedValue[1] = ConvertedValue;
+    ConvertedValue = ADC3ConvertedValue[1];
     ConvertedValueOffset = ConvertedValue + *Value_Offset_pointer;
     
     if (ConvertedValueOffset > 2900)

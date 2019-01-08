@@ -29,6 +29,7 @@ void Doors_Init(Door_TypeDef Door)
     /* Enable the Doors GPIO  Clock */
     RCC_AHB1PeriphClockCmd(GPIO_CLK[Door], ENABLE);
     Doors_InitStructure.GPIO_Pin = GPIO_PIN[Door];
+    Doors_InitStructure.GPIO_Mode = GPIO_Mode_OUT;
     Doors_InitStructure.GPIO_OType = GPIO_OType_PP;
     Doors_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;
     Doors_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;

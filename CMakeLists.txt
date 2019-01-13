@@ -6,6 +6,7 @@ set(sources
     door.c
     adc.c
     system_stm32f4xx.c
+    delay.c
     startup_stm32f4xx.s
 )
 

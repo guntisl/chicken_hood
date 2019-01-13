@@ -4,15 +4,45 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+-eval-command	MEMS/Makefile	/^	arm-none-eabi-gdb $(PROJ_NAME).elf --eval-command="target extended-remote :3333"$/;"	m
+ABS	MEMS/main.h	39;"	d
+AHBPrescTable	MEMS/system_stm32f4xx.c	/^  __I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};$/;"	v
 AHBPrescTable	system_stm32f4xx.c	/^__I uint8_t AHBPrescTable[16] = {0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 3, 4, 6, 7, 8, 9};$/;"	v
-ALL_LED_OFF	main.c	5;"	d	file:
-ALL_LED_ON	main.c	4;"	d	file:
-APP_TX_BUF_SIZE	usbd_cdc_vcp.c	201;"	d	file:
-APP_Tx_Buffer	usbd_cdc_vcp.c	/^uint8_t APP_Tx_Buffer[APP_TX_BUF_SIZE];$/;"	v
-APP_tx_ptr_head	usbd_cdc_vcp.c	/^uint32_t APP_tx_ptr_head;$/;"	v
-APP_tx_ptr_tail	usbd_cdc_vcp.c	/^uint32_t APP_tx_ptr_tail;$/;"	v
-BLUE_LED_OFF	main.c	9;"	d	file:
-BLUE_LED_ON	main.c	8;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	416;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	419;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	422;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	425;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	429;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	431;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	433;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	437;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	440;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	443;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	448;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	451;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	454;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	459;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	462;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	465;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	468;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	401;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	404;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	407;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	410;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	414;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	416;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	418;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	422;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	425;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	428;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	433;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	436;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	439;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	444;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	447;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	450;"	d	file:
+ARCHITECTURE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	453;"	d	file:
+Axes_Data	main_nepabeigts.c	/^TM_LIS302DL_LIS3DSH_t Axes_Data;$/;"	v
 BUTTON_CLK	stm32f4_discovery.c	/^const uint32_t BUTTON_CLK[BUTTONn] = {USER_BUTTON_GPIO_CLK };$/;"	v
 BUTTON_EXTI_LINE	stm32f4_discovery.c	/^const uint16_t BUTTON_EXTI_LINE[BUTTONn] = {USER_BUTTON_EXTI_LINE };$/;"	v
 BUTTON_IRQn	stm32f4_discovery.c	/^const uint8_t BUTTON_IRQn[BUTTONn] = {USER_BUTTON_EXTI_IRQn };$/;"	v
@@ -20,151 +50,666 @@ BUTTON_PIN	stm32f4_discovery.c	/^const uint16_t BUTTON_PIN[BUTTONn] = {USER_BUTT
 BUTTON_PIN_SOURCE	stm32f4_discovery.c	/^const uint8_t BUTTON_PIN_SOURCE[BUTTONn] = {USER_BUTTON_EXTI_PIN_SOURCE }; $/;"	v
 BUTTON_PORT	stm32f4_discovery.c	/^GPIO_TypeDef* BUTTON_PORT[BUTTONn] = {USER_BUTTON_GPIO_PORT }; $/;"	v
 BUTTON_PORT_SOURCE	stm32f4_discovery.c	/^const uint8_t BUTTON_PORT_SOURCE[BUTTONn] = {USER_BUTTON_EXTI_PORT_SOURCE};$/;"	v
+Buffer	MEMS/main.c	/^uint8_t Buffer[6];$/;"	v
+Build_debugonTarget	go.sh	/^function Build_debugonTarget {$/;"	f
+BusFault_Handler	MEMS/stm32f4xx_it.c	/^void BusFault_Handler(void)$/;"	f
 BusFault_Handler	stm32f4xx_it.c	/^void BusFault_Handler(void)$/;"	f
-CCR1_Val	timer.c	/^__IO	uint16_t CCR1_Val = 13600;		\/* 136 --> 5us *\/$/;"	v
-Configure_PA0	main.c	/^void Configure_PA0(void) {$/;"	f
-Configure_PB12	main.c	/^void Configure_PB12(void) {$/;"	f
-ConvertedValue	main.c	/^int ConvertedValue = 0; \/\/Converted value readed from ADC$/;"	v
+CC	MEMS/Makefile	/^CC=arm-none-eabi-gcc$/;"	m
+CFLAGS	MEMS/Makefile	/^CFLAGS  = -g -O2 -Wall -Tstm32_flash.ld $/;"	m
+CMAKE_BINARY_DIR	build/Makefile	/^CMAKE_BINARY_DIR = \/home\/guntis\/dev\/learn_c\/stm32\/cmake\/chicken_hood\/src\/build$/;"	m
+CMAKE_COMMAND	build/Makefile	/^CMAKE_COMMAND = \/usr\/bin\/cmake$/;"	m
+CMAKE_SOURCE_DIR	build/Makefile	/^CMAKE_SOURCE_DIR = \/home\/guntis\/dev\/learn_c\/stm32\/cmake\/chicken_hood\/src$/;"	m
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	101;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	108;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	115;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	122;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	129;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	137;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	142;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	149;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	152;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	155;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	158;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	161;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	176;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	190;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	19;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	200;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	218;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	227;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	236;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	251;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	264;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	282;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	285;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	288;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	42;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	50;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	56;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	62;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	71;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	80;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	94;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	101;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	108;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	115;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	122;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	129;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	137;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	13;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	142;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	149;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	152;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	155;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	170;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	184;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	198;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	19;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	216;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	225;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	234;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	249;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	267;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	270;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	273;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	42;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	50;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	56;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	62;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	71;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	80;"	d	file:
+COMPILER_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	94;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	232;"	d	file:
+COMPILER_VERSION_INTERNAL	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	230;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	103;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	110;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	117;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	124;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	130;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	138;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	144;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	165;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	180;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	191;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	202;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	221;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	229;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	239;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	244;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	24;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	253;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	258;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	267;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	272;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	43;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	51;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	58;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	64;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	73;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	83;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	88;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	96;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	103;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	110;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	117;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	124;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	130;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	138;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	144;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	159;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	15;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	174;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	186;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	188;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	200;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	219;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	227;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	237;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	242;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	24;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	252;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	257;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	43;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	51;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	58;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	64;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	73;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	83;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	88;"	d	file:
+COMPILER_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	96;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	104;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	111;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	118;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	125;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	131;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	139;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	145;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	166;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	181;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	193;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	203;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	222;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	230;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	240;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	245;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	254;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	259;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	25;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	268;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	273;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	44;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	52;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	59;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	65;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	74;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	84;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	89;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	97;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	104;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	111;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	118;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	125;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	131;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	139;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	145;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	160;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	16;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	175;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	191;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	201;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	220;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	228;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	238;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	243;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	253;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	258;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	25;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	44;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	52;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	59;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	65;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	74;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	84;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	89;"	d	file:
+COMPILER_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	97;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	105;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	112;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	119;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	126;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	133;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	146;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	167;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	182;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	196;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	207;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	210;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	223;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	231;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	241;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	246;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	255;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	260;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	269;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	274;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	27;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	29;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	46;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	53;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	67;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	76;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	85;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	90;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	98;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	105;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	112;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	119;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	126;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	133;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	146;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	161;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	176;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	194;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	205;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	208;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	221;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	229;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	239;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	244;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	254;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	259;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	27;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	29;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	46;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	53;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	67;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	76;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	85;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	90;"	d	file:
+COMPILER_VERSION_PATCH	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	98;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	173;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	214;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	33;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	167;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	212;"	d	file:
+COMPILER_VERSION_TWEAK	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	33;"	d	file:
+CXX_STD	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	534;"	d	file:
+CXX_STD	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	536;"	d	file:
+C_DIALECT	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	550;"	d	file:
+C_DIALECT	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	552;"	d	file:
+C_DIALECT	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	555;"	d	file:
+C_DIALECT	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	557;"	d	file:
+C_DIALECT	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	559;"	d	file:
+ClickReg	MEMS/stm32f4xx_it.c	/^uint8_t ClickReg = 0;$/;"	v
 CopyDataInit	startup_stm32f40xx.s	/^CopyDataInit:$/;"	l
-CopyDataInit	startup_stm32f4xx.s	/^CopyDataInit:$/;"	l
+Count	tm_stm32f4_delay.c	/^	uint8_t Count;$/;"	m	struct:__anon1	file:
+Counter	MEMS/stm32f4xx_it.c	/^uint8_t Counter  = 0;$/;"	v
+CustomTimers	tm_stm32f4_delay.c	/^static TM_DELAY_Timers_t CustomTimers;$/;"	v	file:
+DEC	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	472;"	d	file:
+DEC	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	457;"	d	file:
+DOUBLECLICK_Z	MEMS/main.h	32;"	d
+DS18B20_USE_CRC	defines.h	39;"	d
+DUMMY_BYTE	stm32f4_discovery_lis302dl.c	57;"	d	file:
+DebugMon_Handler	MEMS/stm32f4xx_it.c	/^void DebugMon_Handler(void)$/;"	f
 DebugMon_Handler	stm32f4xx_it.c	/^void DebugMon_Handler(void)$/;"	f
 Default_Handler	startup_stm32f40xx.s	/^Default_Handler:$/;"	l
-Default_Handler	startup_stm32f4xx.s	/^Default_Handler:$/;"	l
-Door_Close	door.c	/^void Door_Close(Door_TypeDef Door)$/;"	f
-Door_Open	door.c	/^void Door_Open(Door_TypeDef Door)$/;"	f
-EVAL_COM_IRQHandler	usbd_cdc_vcp.c	/^void EVAL_COM_IRQHandler(void) {$/;"	f
-EXTI0_IRQHandler	main.c	/^void EXTI0_IRQHandler(void) {$/;"	f
-EXTI15_10_IRQHandler	main.c	/^void EXTI15_10_IRQHandler(void) {$/;"	f
+Delay	MEMS/main.c	/^void Delay(__IO uint32_t nTime)$/;"	f
+EQUALS	build/Makefile	/^EQUALS = =$/;"	m
+EXPECTING_SENSORS	main.c	31;"	d	file:
 FillZerobss	startup_stm32f40xx.s	/^FillZerobss:$/;"	l
-FillZerobss	startup_stm32f4xx.s	/^FillZerobss:$/;"	l
-GPIO_CLK	door.c	/^const uint32_t GPIO_CLK[DOORn] = {FrontDoor_GPIO_CLK, BuckDoor_GPIO_CLK, OutsideDoor_GPIO_CLK,$/;"	v
 GPIO_CLK	stm32f4_discovery.c	/^const uint32_t GPIO_CLK[LEDn] = {LED4_GPIO_CLK, LED3_GPIO_CLK, LED5_GPIO_CLK,$/;"	v
-GPIO_PIN	door.c	/^const uint16_t GPIO_PIN[DOORn] = {FrontDoor_PIN, BuckDoor_PIN, WindowDoor_PIN,$/;"	v
 GPIO_PIN	stm32f4_discovery.c	/^const uint16_t GPIO_PIN[LEDn] = {LED4_PIN, LED3_PIN, LED5_PIN,$/;"	v
-GPIO_PORT	door.c	/^GPIO_TypeDef* GPIO_PORT[DOORn] = {FrontDoor_GPIO_PORT, BuckDoor_GPIO_PORT, WindowDoor_GPIO_PORT,$/;"	v
 GPIO_PORT	stm32f4_discovery.c	/^GPIO_TypeDef* GPIO_PORT[LEDn] = {LED4_GPIO_PORT, LED3_GPIO_PORT, LED5_GPIO_PORT,$/;"	v
-GREEN_LED_OFF	main.c	13;"	d	file:
-GREEN_LED_ON	main.c	12;"	d	file:
+HEX	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	483;"	d	file:
+HEX	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	468;"	d	file:
+HSE_BYPASS_INPUT_FREQUENCY	system_stm32f4xx.c	302;"	d	file:
+HSE_VALUE	MEMS/stm32f4xx_conf.h	28;"	d
+HSE_VALUE	MEMS/stm32f4xx_conf.h	29;"	d
+HardFault_Handler	MEMS/stm32f4xx_it.c	/^void HardFault_Handler(void)$/;"	f
 HardFault_Handler	stm32f4xx_it.c	/^void HardFault_Handler(void)$/;"	f
+ID_VOID_MAIN	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	6;"	d	file:
 Infinite_Loop	startup_stm32f40xx.s	/^Infinite_Loop:$/;"	l
-Infinite_Loop	startup_stm32f4xx.s	/^Infinite_Loop:$/;"	l
+LIS302DLTimeout	stm32f4_discovery_lis302dl.c	/^__IO uint32_t  LIS302DLTimeout = LIS302DL_FLAG_TIMEOUT;   $/;"	v
+LIS302DL_BOOT_NORMALMODE	tm_stm32f4_lis302dl_lis3dsh.h	162;"	d
+LIS302DL_BOOT_REBOOTMEMORY	tm_stm32f4_lis302dl_lis3dsh.h	163;"	d
+LIS302DL_CTRL_REG1_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	143;"	d
+LIS302DL_CTRL_REG2_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	144;"	d
+LIS302DL_CTRL_REG3_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	145;"	d
+LIS302DL_DATARATE_100	tm_stm32f4_lis302dl_lis3dsh.h	153;"	d
+LIS302DL_DATARATE_400	tm_stm32f4_lis302dl_lis3dsh.h	154;"	d
+LIS302DL_DataRateCmd	stm32f4_discovery_lis302dl.c	/^void LIS302DL_DataRateCmd(uint8_t DataRateValue)$/;"	f
+LIS302DL_FILTEREDDATASELECTION_OUTPUTREGISTER	tm_stm32f4_lis302dl_lis3dsh.h	164;"	d
+LIS302DL_FULLSCALE_2_3	tm_stm32f4_lis302dl_lis3dsh.h	157;"	d
+LIS302DL_FULLSCALE_9_2	tm_stm32f4_lis302dl_lis3dsh.h	158;"	d
+LIS302DL_FilterConfig	stm32f4_discovery_lis302dl.c	/^void LIS302DL_FilterConfig(LIS302DL_FilterConfigTypeDef *LIS302DL_FilterConfigStruct)$/;"	f
+LIS302DL_FullScaleCmd	stm32f4_discovery_lis302dl.c	/^void LIS302DL_FullScaleCmd(uint8_t FS_value)$/;"	f
+LIS302DL_HIGHPASSFILTERINTERRUPT_1	tm_stm32f4_lis302dl_lis3dsh.h	166;"	d
+LIS302DL_HIGHPASSFILTERINTERRUPT_1_2	tm_stm32f4_lis302dl_lis3dsh.h	168;"	d
+LIS302DL_HIGHPASSFILTERINTERRUPT_2	tm_stm32f4_lis302dl_lis3dsh.h	167;"	d
+LIS302DL_HIGHPASSFILTERINTERRUPT_OFF	tm_stm32f4_lis302dl_lis3dsh.h	165;"	d
+LIS302DL_HIGHPASSFILTER_LEVEL_0	tm_stm32f4_lis302dl_lis3dsh.h	169;"	d
+LIS302DL_HIGHPASSFILTER_LEVEL_1	tm_stm32f4_lis302dl_lis3dsh.h	170;"	d
+LIS302DL_HIGHPASSFILTER_LEVEL_2	tm_stm32f4_lis302dl_lis3dsh.h	171;"	d
+LIS302DL_HIGHPASSFILTER_LEVEL_3	tm_stm32f4_lis302dl_lis3dsh.h	172;"	d
+LIS302DL_ID	tm_stm32f4_lis302dl_lis3dsh.h	92;"	d
+LIS302DL_Init	stm32f4_discovery_lis302dl.c	/^void LIS302DL_Init(LIS302DL_InitTypeDef *LIS302DL_InitStruct)$/;"	f
+LIS302DL_InterruptConfig	stm32f4_discovery_lis302dl.c	/^void LIS302DL_InterruptConfig(LIS302DL_InterruptConfigTypeDef *LIS302DL_IntConfigStruct)$/;"	f
+LIS302DL_LIS3DSH_CS_HIGH	tm_stm32f4_lis302dl_lis3dsh.h	89;"	d
+LIS302DL_LIS3DSH_CS_LOW	tm_stm32f4_lis302dl_lis3dsh.h	88;"	d
+LIS302DL_LIS3DSH_CS_PIN	tm_stm32f4_lis302dl_lis3dsh.h	84;"	d
+LIS302DL_LIS3DSH_CS_PORT	tm_stm32f4_lis302dl_lis3dsh.h	83;"	d
+LIS302DL_LIS3DSH_CS_RCC	tm_stm32f4_lis302dl_lis3dsh.h	82;"	d
+LIS302DL_LIS3DSH_REG_WHO_I_AM	tm_stm32f4_lis302dl_lis3dsh.h	96;"	d
+LIS302DL_LIS3DSH_SPI	tm_stm32f4_lis302dl_lis3dsh.h	76;"	d
+LIS302DL_LIS3DSH_SPI_PINSPACK	tm_stm32f4_lis302dl_lis3dsh.h	77;"	d
+LIS302DL_LOWPOWERMODE_ACTIVE	tm_stm32f4_lis302dl_lis3dsh.h	156;"	d
+LIS302DL_LowLevel_Init	stm32f4_discovery_lis302dl.c	/^static void LIS302DL_LowLevel_Init(void)$/;"	f	file:
+LIS302DL_LowpowerCmd	stm32f4_discovery_lis302dl.c	/^void LIS302DL_LowpowerCmd(uint8_t LowPowerMode)$/;"	f
+LIS302DL_OUT_X_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	146;"	d
+LIS302DL_OUT_Y_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	147;"	d
+LIS302DL_OUT_Z_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	148;"	d
+LIS302DL_Read	stm32f4_discovery_lis302dl.c	/^void LIS302DL_Read(uint8_t* pBuffer, uint8_t ReadAddr, uint16_t NumByteToRead)$/;"	f
+LIS302DL_ReadACC	stm32f4_discovery_lis302dl.c	/^void LIS302DL_ReadACC(int32_t* out)$/;"	f
+LIS302DL_RebootCmd	stm32f4_discovery_lis302dl.c	/^void LIS302DL_RebootCmd(void)$/;"	f
+LIS302DL_SELFTEST_NORMAL	tm_stm32f4_lis302dl_lis3dsh.h	159;"	d
+LIS302DL_SENSITIVITY_2_3G	tm_stm32f4_lis302dl_lis3dsh.h	150;"	d
+LIS302DL_SENSITIVITY_9_2G	tm_stm32f4_lis302dl_lis3dsh.h	151;"	d
+LIS302DL_SERIALINTERFACE_4WIRE	tm_stm32f4_lis302dl_lis3dsh.h	161;"	d
+LIS302DL_SendByte	stm32f4_discovery_lis302dl.c	/^static uint8_t LIS302DL_SendByte(uint8_t byte)$/;"	f	file:
+LIS302DL_TIMEOUT_UserCallback	MEMS/main.c	/^uint32_t LIS302DL_TIMEOUT_UserCallback(void)$/;"	f
+LIS302DL_TIMEOUT_UserCallback	stm32f4_discovery_lis302dl.c	/^uint32_t LIS302DL_TIMEOUT_UserCallback(void)$/;"	f
+LIS302DL_Write	stm32f4_discovery_lis302dl.c	/^void LIS302DL_Write(uint8_t* pBuffer, uint8_t WriteAddr, uint16_t NumByteToWrite)$/;"	f
+LIS302DL_XYZ_ENABLE	tm_stm32f4_lis302dl_lis3dsh.h	160;"	d
+LIS3DSH_CTRL_REG1_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	103;"	d
+LIS3DSH_CTRL_REG2_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	104;"	d
+LIS3DSH_CTRL_REG3_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	105;"	d
+LIS3DSH_CTRL_REG4_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	102;"	d
+LIS3DSH_CTRL_REG5_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	106;"	d
+LIS3DSH_CTRL_REG6_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	107;"	d
+LIS3DSH_DATARATE_100	tm_stm32f4_lis302dl_lis3dsh.h	121;"	d
+LIS3DSH_FILTER_BW_200	tm_stm32f4_lis302dl_lis3dsh.h	132;"	d
+LIS3DSH_FILTER_BW_400	tm_stm32f4_lis302dl_lis3dsh.h	131;"	d
+LIS3DSH_FILTER_BW_50	tm_stm32f4_lis302dl_lis3dsh.h	133;"	d
+LIS3DSH_FILTER_BW_800	tm_stm32f4_lis302dl_lis3dsh.h	130;"	d
+LIS3DSH_FULLSCALE_16	tm_stm32f4_lis302dl_lis3dsh.h	127;"	d
+LIS3DSH_FULLSCALE_2	tm_stm32f4_lis302dl_lis3dsh.h	123;"	d
+LIS3DSH_FULLSCALE_4	tm_stm32f4_lis302dl_lis3dsh.h	124;"	d
+LIS3DSH_FULLSCALE_6	tm_stm32f4_lis302dl_lis3dsh.h	125;"	d
+LIS3DSH_FULLSCALE_8	tm_stm32f4_lis302dl_lis3dsh.h	126;"	d
+LIS3DSH_ID	tm_stm32f4_lis302dl_lis3dsh.h	93;"	d
+LIS3DSH_OUT_X_H_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	109;"	d
+LIS3DSH_OUT_X_L_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	108;"	d
+LIS3DSH_OUT_Y_H_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	111;"	d
+LIS3DSH_OUT_Y_L_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	110;"	d
+LIS3DSH_OUT_Z_H_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	113;"	d
+LIS3DSH_OUT_Z_L_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	112;"	d
+LIS3DSH_SELFTEST_NORMAL	tm_stm32f4_lis302dl_lis3dsh.h	134;"	d
+LIS3DSH_SENSITIVITY_0_06G	tm_stm32f4_lis302dl_lis3dsh.h	115;"	d
+LIS3DSH_SENSITIVITY_0_12G	tm_stm32f4_lis302dl_lis3dsh.h	116;"	d
+LIS3DSH_SENSITIVITY_0_18G	tm_stm32f4_lis302dl_lis3dsh.h	117;"	d
+LIS3DSH_SENSITIVITY_0_24G	tm_stm32f4_lis302dl_lis3dsh.h	118;"	d
+LIS3DSH_SENSITIVITY_0_73G	tm_stm32f4_lis302dl_lis3dsh.h	119;"	d
+LIS3DSH_SERIALINTERFACE_4WIRE	tm_stm32f4_lis302dl_lis3dsh.h	136;"	d
+LIS3DSH_SM_DISABLE	tm_stm32f4_lis302dl_lis3dsh.h	138;"	d
+LIS3DSH_SM_ENABLE	tm_stm32f4_lis302dl_lis3dsh.h	137;"	d
+LIS3DSH_WHO_AM_I_ADDR	tm_stm32f4_lis302dl_lis3dsh.h	101;"	d
+LIS3DSH_XYZ_ENABLE	tm_stm32f4_lis302dl_lis3dsh.h	135;"	d
+LIS3DSH__FULLSCALE_SELECTION	tm_stm32f4_lis302dl_lis3dsh.h	128;"	d
 LoopCopyDataInit	startup_stm32f40xx.s	/^LoopCopyDataInit:$/;"	l
-LoopCopyDataInit	startup_stm32f4xx.s	/^LoopCopyDataInit:$/;"	l
 LoopFillZerobss	startup_stm32f40xx.s	/^LoopFillZerobss:$/;"	l
-LoopFillZerobss	startup_stm32f4xx.s	/^LoopFillZerobss:$/;"	l
+MAX	MEMS/main.h	40;"	d
+MULTIPLEBYTE_CMD	stm32f4_discovery_lis302dl.c	55;"	d	file:
+MemManage_Handler	MEMS/stm32f4xx_it.c	/^void MemManage_Handler(void)$/;"	f
 MemManage_Handler	stm32f4xx_it.c	/^void MemManage_Handler(void)$/;"	f
-MyKey	main _button1.c	/^    uint8_t MyKey = PRESSED_BUTTON_NONE;$/;"	v
-MyUserKeyState	main _button1.c	/^    uint8_t  MyUserKeyState = 0;$/;"	v
+NMI_Handler	MEMS/stm32f4xx_it.c	/^void NMI_Handler(void)$/;"	f
 NMI_Handler	stm32f4xx_it.c	/^void NMI_Handler(void)$/;"	f
 NVIC_InitStructure	stm32f4_discovery.c	/^NVIC_InitTypeDef   NVIC_InitStructure;$/;"	v
-OTG_FS_WKUP_IRQHandler	stm32f4xx_it.c	/^void OTG_FS_WKUP_IRQHandler(void)$/;"	f
-OTG_HS_EP1_IN_IRQHandler	stm32f4xx_it.c	/^void OTG_HS_EP1_IN_IRQHandler(void)$/;"	f
-OTG_HS_EP1_OUT_IRQHandler	stm32f4xx_it.c	/^void OTG_HS_EP1_OUT_IRQHandler(void)$/;"	f
-OTG_HS_IRQHandler	stm32f4xx_it.c	/^void OTG_HS_IRQHandler(void)$/;"	f
-OTG_HS_WKUP_IRQHandler	stm32f4xx_it.c	/^void OTG_HS_WKUP_IRQHandler(void)$/;"	f
-PLLI2S_N	system_stm32f4xx.c	168;"	d	file:
-PLLI2S_R	system_stm32f4xx.c	169;"	d	file:
-PLL_M	system_stm32f4xx.c	156;"	d	file:
-PLL_N	system_stm32f4xx.c	157;"	d	file:
-PLL_P	system_stm32f4xx.c	160;"	d	file:
-PLL_Q	system_stm32f4xx.c	163;"	d	file:
-PRESSED_BUTTON_NONE	main _button1.c	8;"	d	file:
-PRESSED_BUTTON_USER	main _button1.c	9;"	d	file:
+OBJCOPY	MEMS/Makefile	/^OBJCOPY=arm-none-eabi-objcopy$/;"	m
+OBJS	MEMS/Makefile	/^OBJS = $(SRCS:.c=.o)$/;"	m
+OPENOCD	MEMS/Makefile	/^OPENOCD = openocd -f \/home\/guntis\/dev\/STM32_29_examle\/35-STM32F4_LIS3DSH_LIS302DL\/User\/tools\/stm32f4discovery.cfg $/;"	m
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	313;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	316;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	319;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	322;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	325;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	328;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	331;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	334;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	337;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	340;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	343;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	346;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	349;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	352;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	355;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	358;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	361;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	364;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	367;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	370;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	373;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	376;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	379;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	382;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	385;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	389;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	392;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	395;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	398;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	401;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	405;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	298;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	301;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	304;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	307;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	310;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	313;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	316;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	319;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	322;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	325;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	328;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	331;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	334;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	337;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	340;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	343;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	346;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	349;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	352;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	355;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	358;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	361;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	364;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	367;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	370;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	374;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	377;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	380;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	383;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	386;"	d	file:
+PLATFORM_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	390;"	d	file:
+PLL_M	MEMS/system_stm32f4xx.c	147;"	d	file:
+PLL_M	system_stm32f4xx.c	316;"	d	file:
+PLL_M	system_stm32f4xx.c	319;"	d	file:
+PLL_M	system_stm32f4xx.c	321;"	d	file:
+PLL_N	MEMS/system_stm32f4xx.c	148;"	d	file:
+PLL_N	system_stm32f4xx.c	329;"	d	file:
+PLL_N	system_stm32f4xx.c	335;"	d	file:
+PLL_N	system_stm32f4xx.c	341;"	d	file:
+PLL_N	system_stm32f4xx.c	347;"	d	file:
+PLL_P	MEMS/system_stm32f4xx.c	151;"	d	file:
+PLL_P	system_stm32f4xx.c	331;"	d	file:
+PLL_P	system_stm32f4xx.c	337;"	d	file:
+PLL_P	system_stm32f4xx.c	343;"	d	file:
+PLL_P	system_stm32f4xx.c	349;"	d	file:
+PLL_Q	MEMS/system_stm32f4xx.c	154;"	d	file:
+PLL_Q	system_stm32f4xx.c	326;"	d	file:
+PROJ_NAME	MEMS/Makefile	/^PROJ_NAME=mems$/;"	m
+PendSV_Handler	MEMS/stm32f4xx_it.c	/^void PendSV_Handler(void)$/;"	f
 PendSV_Handler	stm32f4xx_it.c	/^void PendSV_Handler(void)$/;"	f
-RED_LED_OFF	main.c	7;"	d	file:
-RED_LED_ON	main.c	6;"	d	file:
-Read_User_Button	main _button1.c	/^uint8_t  Read_User_Button(void)$/;"	f
+PrescalerValue	MEMS/main.c	/^uint16_t PrescalerValue = 0;$/;"	v
+READWRITE_CMD	stm32f4_discovery_lis302dl.c	53;"	d	file:
+RM	build/Makefile	/^RM = \/usr\/bin\/cmake -E remove -f$/;"	m
 Reset_Handler	startup_stm32f40xx.s	/^Reset_Handler:  $/;"	l
-Reset_Handler	startup_stm32f4xx.s	/^Reset_Handler:$/;"	l
-START_I2SCLOCK	system_stm32f4xx.c	167;"	d	file:
+SHELL	build/Makefile	/^SHELL = \/bin\/sh$/;"	m
+SIMULATE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	163;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	178;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	21;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	157;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	172;"	d	file:
+SIMULATE_ID	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	21;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	170;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	185;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	37;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	164;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	179;"	d	file:
+SIMULATE_VERSION_MAJOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	37;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	171;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	186;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	38;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	165;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	180;"	d	file:
+SIMULATE_VERSION_MINOR	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	38;"	d	file:
+SINGLECLICK_Z	MEMS/main.h	33;"	d
+SRCS	MEMS/Makefile	/^SRCS=main.c system_stm32f4xx.c stm32f4xx_it.c$/;"	m
+STM_COMMON	MEMS/Makefile	/^STM_COMMON=..\/..\/..$/;"	m
 STM_EVAL_LEDInit	stm32f4_discovery.c	/^void STM_EVAL_LEDInit(Led_TypeDef Led)$/;"	f
 STM_EVAL_LEDOff	stm32f4_discovery.c	/^void STM_EVAL_LEDOff(Led_TypeDef Led)$/;"	f
 STM_EVAL_LEDOn	stm32f4_discovery.c	/^void STM_EVAL_LEDOn(Led_TypeDef Led)$/;"	f
 STM_EVAL_LEDToggle	stm32f4_discovery.c	/^void STM_EVAL_LEDToggle(Led_TypeDef Led)$/;"	f
 STM_EVAL_PBGetState	stm32f4_discovery.c	/^uint32_t STM_EVAL_PBGetState(Button_TypeDef Button)$/;"	f
 STM_EVAL_PBInit	stm32f4_discovery.c	/^void STM_EVAL_PBInit(Button_TypeDef Button, ButtonMode_TypeDef Button_Mode)$/;"	f
+STRINGIFY	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	309;"	d	file:
+STRINGIFY	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	294;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	308;"	d	file:
+STRINGIFY_HELPER	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	293;"	d	file:
+SUFFIXES	build/Makefile	/^SUFFIXES =$/;"	m
+SVC_Handler	MEMS/stm32f4xx_it.c	/^void SVC_Handler(void)$/;"	f
 SVC_Handler	stm32f4xx_it.c	/^void SVC_Handler(void)$/;"	f
+SetSysClock	MEMS/system_stm32f4xx.c	/^static void SetSysClock(void)$/;"	f	file:
 SetSysClock	system_stm32f4xx.c	/^static void SetSysClock(void)$/;"	f	file:
-SysTick_Handler	main.c	/^void SysTick_Handler(void)\/\/1ms$/;"	f
-SystemCoreClock	system_stm32f4xx.c	/^uint32_t SystemCoreClock = 168000000;$/;"	v
+SingleClickDetect	MEMS/main.c	/^__IO uint8_t SingleClickDetect = 0x00;$/;"	v
+SysTick_Handler	MEMS/stm32f4xx_it.c	/^void SysTick_Handler(void)$/;"	f
+SystemCoreClock	MEMS/system_stm32f4xx.c	/^  uint32_t SystemCoreClock = 168000000;$/;"	v
+SystemCoreClock	system_stm32f4xx.c	/^  uint32_t SystemCoreClock = 100000000;$/;"	v
+SystemCoreClock	system_stm32f4xx.c	/^  uint32_t SystemCoreClock = 168000000;$/;"	v
+SystemCoreClock	system_stm32f4xx.c	/^  uint32_t SystemCoreClock = 180000000;$/;"	v
+SystemCoreClock	system_stm32f4xx.c	/^  uint32_t SystemCoreClock = 84000000;$/;"	v
+SystemCoreClockUpdate	MEMS/system_stm32f4xx.c	/^void SystemCoreClockUpdate(void)$/;"	f
 SystemCoreClockUpdate	system_stm32f4xx.c	/^void SystemCoreClockUpdate(void)$/;"	f
+SystemInit	MEMS/system_stm32f4xx.c	/^void SystemInit(void)$/;"	f
 SystemInit	system_stm32f4xx.c	/^void SystemInit(void)$/;"	f
+SystemInit_ExtMemCtl	MEMS/system_stm32f4xx.c	/^void SystemInit_ExtMemCtl(void)$/;"	f
 SystemInit_ExtMemCtl	system_stm32f4xx.c	/^void SystemInit_ExtMemCtl(void)$/;"	f
-TIM3_IRQHandler	timer.c	/^void TIM3_IRQHandler(void)$/;"	f
-TIMER3_Config	timer.c	/^void TIMER3_Config(void)$/;"	f
-USART_InitStructure	usbd_cdc_vcp.c	/^USART_InitTypeDef USART_InitStructure;$/;"	v
-USBD_CONFIGURATION_FS_STRING	usbd_desc.c	70;"	d	file:
-USBD_CONFIGURATION_HS_STRING	usbd_desc.c	67;"	d	file:
-USBD_INTERFACE_FS_STRING	usbd_desc.c	71;"	d	file:
-USBD_INTERFACE_HS_STRING	usbd_desc.c	68;"	d	file:
-USBD_LANGID_STRING	usbd_desc.c	58;"	d	file:
-USBD_MANUFACTURER_STRING	usbd_desc.c	59;"	d	file:
-USBD_PID	usbd_desc.c	53;"	d	file:
-USBD_PRODUCT_FS_STRING	usbd_desc.c	64;"	d	file:
-USBD_PRODUCT_HS_STRING	usbd_desc.c	61;"	d	file:
-USBD_SERIALNUMBER_FS_STRING	usbd_desc.c	65;"	d	file:
-USBD_SERIALNUMBER_HS_STRING	usbd_desc.c	62;"	d	file:
-USBD_USR_ConfigStrDescriptor	usbd_desc.c	/^uint8_t *  USBD_USR_ConfigStrDescriptor( uint8_t speed , uint16_t *length)$/;"	f
-USBD_USR_DeviceConfigured	usbd_usr.c	/^void USBD_USR_DeviceConfigured (void)$/;"	f
-USBD_USR_DeviceConnected	usbd_usr.c	/^void USBD_USR_DeviceConnected (void)$/;"	f
-USBD_USR_DeviceDescriptor	usbd_desc.c	/^uint8_t *  USBD_USR_DeviceDescriptor( uint8_t speed , uint16_t *length)$/;"	f
-USBD_USR_DeviceDisconnected	usbd_usr.c	/^void USBD_USR_DeviceDisconnected (void)$/;"	f
-USBD_USR_DeviceReset	usbd_usr.c	/^void USBD_USR_DeviceReset(uint8_t speed )$/;"	f
-USBD_USR_DeviceResumed	usbd_usr.c	/^void USBD_USR_DeviceResumed(void)$/;"	f
-USBD_USR_DeviceSuspended	usbd_usr.c	/^void USBD_USR_DeviceSuspended(void)$/;"	f
-USBD_USR_Init	usbd_usr.c	/^void USBD_USR_Init(void)$/;"	f
-USBD_USR_InterfaceStrDescriptor	usbd_desc.c	/^uint8_t *  USBD_USR_InterfaceStrDescriptor( uint8_t speed , uint16_t *length)$/;"	f
-USBD_USR_LangIDStrDescriptor	usbd_desc.c	/^uint8_t *  USBD_USR_LangIDStrDescriptor( uint8_t speed , uint16_t *length)$/;"	f
-USBD_USR_ManufacturerStrDescriptor	usbd_desc.c	/^uint8_t *  USBD_USR_ManufacturerStrDescriptor( uint8_t speed , uint16_t *length)$/;"	f
-USBD_USR_ProductStrDescriptor	usbd_desc.c	/^uint8_t *  USBD_USR_ProductStrDescriptor( uint8_t speed , uint16_t *length)$/;"	f
-USBD_USR_SerialStrDescriptor	usbd_desc.c	/^uint8_t *  USBD_USR_SerialStrDescriptor( uint8_t speed , uint16_t *length)$/;"	f
-USBD_VID	usbd_desc.c	51;"	d	file:
-USB_OTG_BSP_ConfigVBUS	usb_bsp.c	/^void USB_OTG_BSP_ConfigVBUS(USB_OTG_CORE_HANDLE *pdev) {$/;"	f
-USB_OTG_BSP_DriveVBUS	usb_bsp.c	/^void USB_OTG_BSP_DriveVBUS(USB_OTG_CORE_HANDLE *pdev,uint8_t state) {$/;"	f
-USB_OTG_BSP_EnableInterrupt	usb_bsp.c	/^void USB_OTG_BSP_EnableInterrupt(USB_OTG_CORE_HANDLE *pdev)$/;"	f
-USB_OTG_BSP_Init	usb_bsp.c	/^void USB_OTG_BSP_Init(USB_OTG_CORE_HANDLE *pdev)$/;"	f
-USB_OTG_BSP_mDelay	usb_bsp.c	/^void USB_OTG_BSP_mDelay (const uint32_t msec)$/;"	f
-USB_OTG_BSP_uDelay	usb_bsp.c	/^void USB_OTG_BSP_uDelay (const uint32_t usec)$/;"	f
-USR_cb	usbd_usr.c	/^USBD_Usr_cb_TypeDef USR_cb =$/;"	v
-USR_desc	usbd_desc.c	/^USBD_DEVICE USR_desc =$/;"	v
+TIM_ARR	MEMS/main.h	36;"	d
+TIM_CCR	MEMS/main.h	37;"	d
+TIM_Config	MEMS/main.c	/^static void TIM_Config(void)$/;"	f	file:
+TIM_TimeBaseStructure	MEMS/main.c	/^TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;$/;"	v
+TM_DEFINES_H	defines.h	29;"	d
+TM_DELAY_DisableDelayTimer	tm_stm32f4_delay.c	/^void TM_DELAY_DisableDelayTimer(void) {$/;"	f
+TM_DELAY_EnableDelayTimer	tm_stm32f4_delay.c	/^void TM_DELAY_EnableDelayTimer(void) {$/;"	f
+TM_DELAY_INT_InitTIM	tm_stm32f4_delay.c	/^void TM_DELAY_INT_InitTIM(void) {$/;"	f
+TM_DELAY_Init	tm_stm32f4_delay.c	/^void TM_DELAY_Init(void) {	$/;"	f
+TM_DELAY_Initialized	tm_stm32f4_delay.c	/^uint8_t TM_DELAY_Initialized = 0;$/;"	v
+TM_DELAY_TIM_IRQ_HANDLER	tm_stm32f4_delay.c	/^void TM_DELAY_TIM_IRQ_HANDLER(void) {$/;"	f
+TM_DELAY_TimerAutoReload	tm_stm32f4_delay.c	/^TM_DELAY_Timer_t* TM_DELAY_TimerAutoReload(TM_DELAY_Timer_t* Timer, uint8_t AutoReload) {$/;"	f
+TM_DELAY_TimerAutoReloadValue	tm_stm32f4_delay.c	/^TM_DELAY_Timer_t* TM_DELAY_TimerAutoReloadValue(TM_DELAY_Timer_t* Timer, uint32_t AutoReloadValue) {$/;"	f
+TM_DELAY_TimerCreate	tm_stm32f4_delay.c	/^TM_DELAY_Timer_t* TM_DELAY_TimerCreate(uint32_t ReloadValue, uint8_t AutoReload, uint8_t StartTimer, void (*TM_DELAY_CustomTimerCallback)(void *), void* UserParameters) {$/;"	f
+TM_DELAY_TimerDelete	tm_stm32f4_delay.c	/^void TM_DELAY_TimerDelete(TM_DELAY_Timer_t* Timer) {$/;"	f
+TM_DELAY_TimerReset	tm_stm32f4_delay.c	/^TM_DELAY_Timer_t* TM_DELAY_TimerReset(TM_DELAY_Timer_t* Timer) {$/;"	f
+TM_DELAY_TimerStart	tm_stm32f4_delay.c	/^TM_DELAY_Timer_t* TM_DELAY_TimerStart(TM_DELAY_Timer_t* Timer) {$/;"	f
+TM_DELAY_TimerStop	tm_stm32f4_delay.c	/^TM_DELAY_Timer_t* TM_DELAY_TimerStop(TM_DELAY_Timer_t* Timer) {$/;"	f
+TM_DELAY_Timers_t	tm_stm32f4_delay.c	/^} TM_DELAY_Timers_t;$/;"	t	typeref:struct:__anon1	file:
+TM_DISCO_ButtonInit	tm_stm32f4_disco.c	/^void TM_DISCO_ButtonInit(void) {$/;"	f
+TM_DISCO_ButtonOnPressed	tm_stm32f4_disco.c	/^uint8_t TM_DISCO_ButtonOnPressed(void) {$/;"	f
+TM_DISCO_ButtonOnReleased	tm_stm32f4_disco.c	/^uint8_t TM_DISCO_ButtonOnReleased(void) {$/;"	f
+TM_DISCO_LedInit	tm_stm32f4_disco.c	/^void TM_DISCO_LedInit(void) {$/;"	f
+TM_DISCO_STM32F4_DISCOVERY	defines.h	36;"	d
+TM_INT_DISCO_ButtonPressed	tm_stm32f4_disco.c	/^static volatile uint8_t TM_INT_DISCO_ButtonPressed = 0;$/;"	v	file:
+TM_LIS302DL_Filter_1Hz	tm_stm32f4_lis302dl_lis3dsh.h	/^	TM_LIS302DL_Filter_1Hz,$/;"	e	enum:__anon4
+TM_LIS302DL_Filter_250mHz	tm_stm32f4_lis302dl_lis3dsh.h	/^	TM_LIS302DL_Filter_250mHz$/;"	e	enum:__anon4
+TM_LIS302DL_Filter_2Hz	tm_stm32f4_lis302dl_lis3dsh.h	/^	TM_LIS302DL_Filter_2Hz,$/;"	e	enum:__anon4
+TM_LIS302DL_Filter_500mHz	tm_stm32f4_lis302dl_lis3dsh.h	/^	TM_LIS302DL_Filter_500mHz,$/;"	e	enum:__anon4
+TM_LIS302DL_INT_ReadAxes	main_nepabeigts.c	/^void TM_LIS302DL_INT_ReadAxes(TM_LIS302DL_LIS3DSH_t* Axes_Data) {$/;"	f
+TM_LIS302DL_INT_ReadAxes	tm_stm32f4_lis302dl_lis3dsh_hide.c	/^void TM_LIS302DL_INT_ReadAxes(TM_LIS302DL_LIS3DSH_t* Axes_Data) {$/;"	f
+TM_LIS302DL_LIS3DSH_Detect	main_nepabeigts.c	/^TM_LIS302DL_LIS3DSH_Device_t TM_LIS302DL_LIS3DSH_Detect(void) {$/;"	f
+TM_LIS302DL_LIS3DSH_Detect	tm_stm32f4_lis302dl_lis3dsh_hide.c	/^TM_LIS302DL_LIS3DSH_Device_t TM_LIS302DL_LIS3DSH_Detect(void) {$/;"	f
+TM_LIS302DL_LIS3DSH_Device_Error	tm_stm32f4_lis302dl_lis3dsh.h	/^	TM_LIS302DL_LIS3DSH_Device_Error,$/;"	e	enum:__anon2
+TM_LIS302DL_LIS3DSH_Device_LIS302DL	tm_stm32f4_lis302dl_lis3dsh.h	/^	TM_LIS302DL_LIS3DSH_Device_LIS302DL,$/;"	e	enum:__anon2
+TM_LIS302DL_LIS3DSH_Device_LIS3DSH	tm_stm32f4_lis302dl_lis3dsh.h	/^	TM_LIS302DL_LIS3DSH_Device_LIS3DSH$/;"	e	enum:__anon2
+TM_LIS302DL_LIS3DSH_Device_t	tm_stm32f4_lis302dl_lis3dsh.h	/^} TM_LIS302DL_LIS3DSH_Device_t;$/;"	t	typeref:enum:__anon2
+TM_LIS302DL_LIS3DSH_Filter_t	tm_stm32f4_lis302dl_lis3dsh.h	/^} TM_LIS302DL_LIS3DSH_Filter_t;$/;"	t	typeref:enum:__anon4
+TM_LIS302DL_LIS3DSH_H	tm_stm32f4_lis302dl_lis3dsh.h	56;"	d
+TM_LIS302DL_LIS3DSH_INT_Delay	main_nepabeigts.c	/^void TM_LIS302DL_LIS3DSH_INT_Delay(void) {$/;"	f
+TM_LIS302DL_LIS3DSH_INT_Delay	tm_stm32f4_lis302dl_lis3dsh_hide.c	/^void TM_LIS302DL_LIS3DSH_INT_Delay(void) {$/;"	f
+TM_LIS302DL_LIS3DSH_INT_Device	main_nepabeigts.c	/^TM_LIS302DL_LIS3DSH_Device_t TM_LIS302DL_LIS3DSH_INT_Device = TM_LIS302DL_LIS3DSH_Device_Error;$/;"	v
+TM_LIS302DL_LIS3DSH_INT_Device	tm_stm32f4_lis302dl_lis3dsh_hide.c	/^TM_LIS302DL_LIS3DSH_Device_t TM_LIS302DL_LIS3DSH_INT_Device = TM_LIS302DL_LIS3DSH_Device_Error;$/;"	v
+TM_LIS302DL_LIS3DSH_INT_InitLIS302DL	main_nepabeigts.c	/^void TM_LIS302DL_LIS3DSH_INT_InitLIS302DL(TM_LIS302DL_LIS3DSH_Sensitivity_t Sensitivity, TM_LIS302DL_LIS3DSH_Filter_t Filter) {$/;"	f
+TM_LIS302DL_LIS3DSH_INT_InitLIS302DL	tm_stm32f4_lis302dl_lis3dsh_hide.c	/^void TM_LIS302DL_LIS3DSH_INT_InitLIS302DL(TM_LIS302DL_LIS3DSH_Sensitivity_t Sensitivity, TM_LIS302DL_LIS3DSH_Filter_t Filter) {$/;"	f
+TM_LIS302DL_LIS3DSH_INT_InitLIS3DSH	main_nepabeigts.c	/^void TM_LIS302DL_LIS3DSH_INT_InitLIS3DSH(TM_LIS302DL_LIS3DSH_Sensitivity_t Sensitivity, TM_LIS302DL_LIS3DSH_Filter_t Filter) {$/;"	f
+TM_LIS302DL_LIS3DSH_INT_InitLIS3DSH	tm_stm32f4_lis302dl_lis3dsh_hide.c	/^void TM_LIS302DL_LIS3DSH_INT_InitLIS3DSH(TM_LIS302DL_LIS3DSH_Sensitivity_t Sensitivity, TM_LIS302DL_LIS3DSH_Filter_t Filter) {$/;"	f
+TM_LIS302DL_LIS3DSH_INT_InitPins	main_nepabeigts.c	/^void TM_LIS302DL_LIS3DSH_INT_InitPins(void) {$/;"	f
+TM_LIS302DL_LIS3DSH_INT_InitPins	tm_stm32f4_lis302dl_lis3dsh_hide.c	/^void TM_LIS302DL_LIS3DSH_INT_InitPins(void) {$/;"	f
+TM_LIS302DL_LIS3DSH_INT_ReadSPI	main_nepabeigts.c	/^void TM_LIS302DL_LIS3DSH_INT_ReadSPI(uint8_t* data, uint8_t addr, uint8_t count) {$/;"	f
+TM_LIS302DL_LIS3DSH_INT_ReadSPI	tm_stm32f4_lis302dl_lis3dsh_hide.c	/^void TM_LIS302DL_LIS3DSH_INT_ReadSPI(uint8_t* data, uint8_t addr, uint8_t count) {$/;"	f
+TM_LIS302DL_LIS3DSH_INT_WriteSPI	main_nepabeigts.c	/^void TM_LIS302DL_LIS3DSH_INT_WriteSPI(uint8_t* data, uint8_t addr, uint8_t count) {$/;"	f
+TM_LIS302DL_LIS3DSH_INT_WriteSPI	tm_stm32f4_lis302dl_lis3dsh_hide.c	/^void TM_LIS302DL_LIS3DSH_INT_WriteSPI(uint8_t* data, uint8_t addr, uint8_t count) {$/;"	f
+TM_LIS302DL_LIS3DSH_Init	main_nepabeigts.c	/^TM_LIS302DL_LIS3DSH_Device_t TM_LIS302DL_LIS3DSH_Init(TM_LIS302DL_LIS3DSH_Sensitivity_t Sensitivity, TM_LIS302DL_LIS3DSH_Filter_t Filter) {$/;"	f
+TM_LIS302DL_LIS3DSH_Init	tm_stm32f4_lis302dl_lis3dsh_hide.c	/^TM_LIS302DL_LIS3DSH_Device_t TM_LIS302DL_LIS3DSH_Init(TM_LIS302DL_LIS3DSH_Sensitivity_t Sensitivity, TM_LIS302DL_LIS3DSH_Filter_t Filter) {$/;"	f
+TM_LIS302DL_LIS3DSH_ReadAxes	main_nepabeigts.c	/^TM_LIS302DL_LIS3DSH_Device_t TM_LIS302DL_LIS3DSH_ReadAxes(TM_LIS302DL_LIS3DSH_t* Axes_Data) {$/;"	f
+TM_LIS302DL_LIS3DSH_ReadAxes	tm_stm32f4_lis302dl_lis3dsh_hide.c	/^TM_LIS302DL_LIS3DSH_Device_t TM_LIS302DL_LIS3DSH_ReadAxes(TM_LIS302DL_LIS3DSH_t* Axes_Data) {$/;"	f
+TM_LIS302DL_LIS3DSH_Sensitivity_t	tm_stm32f4_lis302dl_lis3dsh.h	/^} TM_LIS302DL_LIS3DSH_Sensitivity_t;$/;"	t	typeref:enum:__anon3
+TM_LIS302DL_LIS3DSH_t	tm_stm32f4_lis302dl_lis3dsh.h	/^} TM_LIS302DL_LIS3DSH_t;$/;"	t	typeref:struct:__anon5
+TM_LIS302DL_Sensitivity_2_3G	tm_stm32f4_lis302dl_lis3dsh.h	/^	TM_LIS302DL_Sensitivity_2_3G,$/;"	e	enum:__anon3
+TM_LIS302DL_Sensitivity_9_2G	tm_stm32f4_lis302dl_lis3dsh.h	/^	TM_LIS302DL_Sensitivity_9_2G$/;"	e	enum:__anon3
+TM_LIS3DSH_Filter_200Hz	tm_stm32f4_lis302dl_lis3dsh.h	/^	TM_LIS3DSH_Filter_200Hz,$/;"	e	enum:__anon4
+TM_LIS3DSH_Filter_400Hz	tm_stm32f4_lis302dl_lis3dsh.h	/^	TM_LIS3DSH_Filter_400Hz,$/;"	e	enum:__anon4
+TM_LIS3DSH_Filter_50Hz	tm_stm32f4_lis302dl_lis3dsh.h	/^	TM_LIS3DSH_Filter_50Hz,$/;"	e	enum:__anon4
+TM_LIS3DSH_Filter_800Hz	tm_stm32f4_lis302dl_lis3dsh.h	/^	TM_LIS3DSH_Filter_800Hz,$/;"	e	enum:__anon4
+TM_LIS3DSH_INT_ReadAxes	main_nepabeigts.c	/^void TM_LIS3DSH_INT_ReadAxes(TM_LIS302DL_LIS3DSH_t *Axes_Data) {$/;"	f
+TM_LIS3DSH_INT_ReadAxes	tm_stm32f4_lis302dl_lis3dsh_hide.c	/^void TM_LIS3DSH_INT_ReadAxes(TM_LIS302DL_LIS3DSH_t *Axes_Data) {$/;"	f
+TM_LIS3DSH_INT_Sensitivity	main_nepabeigts.c	/^float TM_LIS3DSH_INT_Sensitivity;$/;"	v
+TM_LIS3DSH_INT_Sensitivity	tm_stm32f4_lis302dl_lis3dsh_hide.c	/^float TM_LIS3DSH_INT_Sensitivity;$/;"	v
+TM_LIS3DSH_Sensitivity_16G	tm_stm32f4_lis302dl_lis3dsh.h	/^	TM_LIS3DSH_Sensitivity_16G,$/;"	e	enum:__anon3
+TM_LIS3DSH_Sensitivity_2G	tm_stm32f4_lis302dl_lis3dsh.h	/^	TM_LIS3DSH_Sensitivity_2G,$/;"	e	enum:__anon3
+TM_LIS3DSH_Sensitivity_4G	tm_stm32f4_lis302dl_lis3dsh.h	/^	TM_LIS3DSH_Sensitivity_4G,$/;"	e	enum:__anon3
+TM_LIS3DSH_Sensitivity_6G	tm_stm32f4_lis302dl_lis3dsh.h	/^	TM_LIS3DSH_Sensitivity_6G,$/;"	e	enum:__anon3
+TM_LIS3DSH_Sensitivity_8G	tm_stm32f4_lis302dl_lis3dsh.h	/^	TM_LIS3DSH_Sensitivity_8G,$/;"	e	enum:__anon3
+TM_Time	tm_stm32f4_delay.c	/^__IO uint32_t TM_Time = 0;$/;"	v
+TM_Time2	tm_stm32f4_delay.c	/^__IO uint32_t TM_Time2 = 0;$/;"	v
+TM_TimingDelay	tm_stm32f4_delay.c	/^__IO uint32_t TM_TimingDelay = 0;$/;"	v
+TempAcceleration	MEMS/stm32f4xx_it.c	/^__IO uint8_t TempAcceleration = 0;$/;"	v
+Timers	tm_stm32f4_delay.c	/^	TM_DELAY_Timer_t* Timers[DELAY_MAX_CUSTOM_TIMERS];$/;"	m	struct:__anon1	file:
+TimingDelay	MEMS/main.c	/^__IO uint32_t TimingDelay = 0;$/;"	v
+TimingDelay_Decrement	MEMS/main.c	/^void TimingDelay_Decrement(void)$/;"	f
+TimingDelay_Decrement	stm32f4xx_it.c	/^void TimingDelay_Decrement(void) {$/;"	f
+UsageFault_Handler	MEMS/stm32f4xx_it.c	/^void UsageFault_Handler(void)$/;"	f
 UsageFault_Handler	stm32f4xx_it.c	/^void UsageFault_Handler(void)$/;"	f
-VCP_Ctrl	usbd_cdc_vcp.c	/^static uint16_t VCP_Ctrl(uint32_t Cmd, uint8_t* Buf, uint32_t Len) {$/;"	f	file:
-VCP_DataRx	usbd_cdc_vcp.c	/^static uint16_t VCP_DataRx(uint8_t* Buf, uint32_t Len) {$/;"	f	file:
-VCP_DataTx	usbd_cdc_vcp.c	/^static uint16_t VCP_DataTx(uint8_t* Buf, uint32_t Len) {$/;"	f	file:
-VCP_DeInit	usbd_cdc_vcp.c	/^static uint16_t VCP_DeInit(void) {$/;"	f	file:
-VCP_Init	usbd_cdc_vcp.c	/^static uint16_t VCP_Init(void) {$/;"	f	file:
-VCP_fops	usbd_cdc_vcp.c	/^CDC_IF_Prop_TypeDef VCP_fops = { VCP_Init, VCP_DeInit, VCP_Ctrl, VCP_DataTx,$/;"	v
-VCP_get_char	usbd_cdc_vcp.c	/^int VCP_get_char(uint8_t *buf) {$/;"	f
-VCP_get_string	usbd_cdc_vcp.c	/^int VCP_get_string(uint8_t *buf) {$/;"	f
-VCP_put_char	usbd_cdc_vcp.c	/^void VCP_put_char(uint8_t buf) {$/;"	f
-VCP_send_buffer	usbd_cdc_vcp.c	/^void VCP_send_buffer(uint8_t* buf, int len) {$/;"	f
-VCP_send_str	usbd_cdc_vcp.c	/^void VCP_send_str(uint8_t* buf) {$/;"	f
-VECT_TAB_OFFSET	system_stm32f4xx.c	150;"	d	file:
-YELLOW_LED_OFF	main.c	11;"	d	file:
-YELLOW_LED_ON	main.c	10;"	d	file:
-__ALIGN_END	usbd_desc.c	/^__ALIGN_BEGIN uint8_t USBD_DeviceDesc[USB_SIZ_DEVICE_DESC] __ALIGN_END =$/;"	v
-__ALIGN_END	usbd_desc.c	/^__ALIGN_BEGIN uint8_t USBD_DeviceQualifierDesc[USB_LEN_DEV_QUALIFIER_DESC] __ALIGN_END =$/;"	v
-__ALIGN_END	usbd_desc.c	/^__ALIGN_BEGIN uint8_t USBD_LangIDDesc[USB_SIZ_STRING_LANGID] __ALIGN_END =$/;"	v
-__errno	syscalls.c	/^int __errno;$/;"	v
-_close	syscalls.c	/^int _close(int file) {$/;"	f
-_fstat	syscalls.c	/^int _fstat(int file, struct stat *st) {$/;"	f
-_isatty	syscalls.c	/^int _isatty(int file) {$/;"	f
-_lseek	syscalls.c	/^int _lseek(int file, int ptr, int dir) {$/;"	f
-_open	syscalls.c	/^int _open(const char *name, int flags, int mode) {$/;"	f
-_read	syscalls.c	/^int _read(int file, char *ptr, int len) {$/;"	f
-_sbrk_r	syscalls.c	/^caddr_t _sbrk_r (struct _reent *r, int incr) {$/;"	f
-_write	syscalls.c	/^int _write(int file, char *ptr, int len) {$/;"	f
-adc_configure	main.c	/^void adc_configure(){$/;"	f
-adc_convert	main.c	/^ int adc_convert(){$/;"	f
-coreTimer	main _button1.c	/^void coreTimer(volatile uint32_t times) {$/;"	f
-counter	timer.c	/^int counter;$/;"	v
-delay	main.c	14;"	d	file:
-delay_count	main.c	/^uint16_t delay_count=0;$/;"	v
-delay_ms	main.c	/^void delay_ms(uint16_t delay_temp)$/;"	f
-doors_init	door.c	/^void doors_init(Door_TypeDef Door)$/;"	f
+VECT_TAB_OFFSET	MEMS/system_stm32f4xx.c	142;"	d	file:
+VECT_TAB_OFFSET	system_stm32f4xx.c	309;"	d	file:
+X	tm_stm32f4_lis302dl_lis3dsh.h	/^	int16_t X;$/;"	m	struct:__anon5
+XOffset	MEMS/main.c	/^__IO int8_t XOffset;$/;"	v
+Y	tm_stm32f4_lis302dl_lis3dsh.h	/^	int16_t Y;$/;"	m	struct:__anon5
+YOffset	MEMS/main.c	/^__IO int8_t YOffset;$/;"	v
+Z	tm_stm32f4_lis302dl_lis3dsh.h	/^	int16_t Z;$/;"	m	struct:__anon5
+__MAIN_H	MEMS/main.h	24;"	d
+__STM32F4xx_CONF_H	MEMS/stm32f4xx_conf.h	24;"	d
+__STM32F4xx_CONF_H	stm32f4xx_conf.h	30;"	d
+__STM32F4xx_IT_H	MEMS/stm32f4xx_it.h	24;"	d
+__STM32F4xx_IT_H	stm32f4xx_it.h	30;"	d
+assert_failed	MEMS/main.c	/^void assert_failed(uint8_t* file, uint32_t line)$/;"	f
+assert_param	MEMS/stm32f4xx_conf.h	85;"	d
+assert_param	MEMS/stm32f4xx_conf.h	89;"	d
+assert_param	stm32f4xx_conf.h	113;"	d
+assert_param	stm32f4xx_conf.h	117;"	d
+buildForHost	go.sh	/^function buildForHost {$/;"	f
+checkHostSetupHasBeenRun	go.sh	/^function checkHostSetupHasBeenRun {$/;"	f
+checkTargetSetupHasBeenRun	go.sh	/^function checkTargetSetupHasBeenRun {$/;"	f
+clean	go.sh	/^function clean {$/;"	f
+const	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	10;"	d	file:
+features	build/CMakeFiles/feature_tests.c	/^  const char features[] = {"\\n"$/;"	v
+features	build/CMakeFiles/feature_tests.cxx	/^  const char features[] = {"\\n"$/;"	v
+flash	go.sh	/^function flash {$/;"	f
 g_pfnVectors	startup_stm32f40xx.s	/^g_pfnVectors:$/;"	l
-g_pfnVectors	startup_stm32f4xx.s	/^g_pfnVectors:$/;"	l
-linecoding	usbd_cdc_vcp.c	/^LINE_CODING linecoding = {$/;"	v
-main	main _button1.c	/^int main(void)$/;"	f
+help	go.sh	/^function help {$/;"	f
+info	go.sh	/^function info {$/;"	f
+info_arch	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_arch	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_arch = "INFO" ":" "arch[" ARCHITECTURE_ID "]";$/;"	v
+info_compiler	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_compiler	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_compiler = "INFO" ":" "compiler[" COMPILER_ID "]";$/;"	v
+info_cray	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v
+info_cray	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";$/;"	v
+info_language_dialect_default	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^const char* info_language_dialect_default =$/;"	v
+info_language_dialect_default	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^const char* info_language_dialect_default = "INFO" ":" "dialect_default["$/;"	v
+info_platform	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_platform	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_platform = "INFO" ":" "platform[" PLATFORM_ID "]";$/;"	v
+info_simulate	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v
+info_simulate	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* info_simulate = "INFO" ":" "simulate[" SIMULATE_ID "]";$/;"	v
+info_simulate_version	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_simulate_version[] = {$/;"	v
+info_simulate_version	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_simulate_version[] = {$/;"	v
+info_version	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_version[] = {$/;"	v
+info_version	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version[] = {$/;"	v
+info_version_internal	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const info_version_internal[] = {$/;"	v
+info_version_internal	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const info_version_internal[] = {$/;"	v
+killOpenocd	go.sh	/^function killOpenocd {$/;"	f
+main	MEMS/main.c	/^int main(void)$/;"	f
+main	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^int main(argc, argv) int argc; char *argv[];$/;"	f
+main	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^void main() {}$/;"	f
+main	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^int main(int argc, char* argv[])$/;"	f
+main	build/CMakeFiles/feature_tests.c	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f
+main	build/CMakeFiles/feature_tests.cxx	/^int main(int argc, char** argv) { (void)argv; return features[argc]; }$/;"	f
+main	go.sh	/^function main {$/;"	f
 main	main.c	/^int main(void) {$/;"	f
-ms_delay	delay.c	/^void ms_delay(int ms)$/;"	f
+main	main_nepabeigts.c	/^int main(void) {	$/;"	f
+mult	tm_stm32f4_delay.c	/^volatile uint32_t mult;$/;"	v
+qnxnto	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
+qnxnto	build/CMakeFiles/3.10.2/CompilerIdCXX/CMakeCXXCompilerId.cpp	/^char const* qnxnto = "INFO" ":" "qnxnto[]";$/;"	v
+runHostTask	go.sh	/^function runHostTask {$/;"	f
+runTargetTask	go.sh	/^function runTargetTask {$/;"	f
+run_debug_mode	go.sh	/^function run_debug_mode {$/;"	f
+setup	go.sh	/^function setup {$/;"	f
+setupHost	go.sh	/^function setupHost {$/;"	f
+setupTarget	go.sh	/^function setupTarget {$/;"	f
+testOnHost	go.sh	/^function testOnHost {$/;"	f
+testOnTarget	go.sh	/^function testOnTarget {$/;"	f
+volatile	build/CMakeFiles/3.10.2/CompilerIdC/CMakeCCompilerId.c	11;"	d	file:

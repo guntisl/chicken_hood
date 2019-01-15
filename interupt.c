@@ -1,9 +1,16 @@
 
 //#include "stm32f4xx.h"
 #include "interupt.h"
-
+#include "tm_stm32f4_i2c.h"
+#include "tm_stm32f4_usart.h"
+#include "tm_stm32f4_delay.h"
 #include "door.h"
-
+#include <stdio.h>
+/* Slave address */
+#define ADDRESS		0xE0  // 1101 000 0 - left aligned 7-bit address
+    uint32_t volatile emty_bar_offset; 
+	char range[40];
+	uint8_t data[3];
 /* Set interrupt handlers */
 /* Handle PA0 interrupt */
 void EXTI0_IRQHandler(void) {
@@ -11,11 +18,29 @@ void EXTI0_IRQHandler(void) {
     if (EXTI_GetITStatus(EXTI_Line0) != RESET) {
             /* Do your stuff when PA0 is changed */
             
-        Doors_Close(OutsideDoor);
             
+	    TM_I2C_Write(I2C1, ADDRESS, 0x00, 0x51);
+
+	    Delayms(70);
+	    data[0] = TM_I2C_Read(I2C1, ADDRESS, 1);
+        data[1] = TM_I2C_Read(I2C1, ADDRESS, 2);
+        data[2] = TM_I2C_Read(I2C1, ADDRESS, 3);
+    
+        sprintf(range, "Light = %d , H Range = %d , L Range %d \n\r", data[0], data[1], data[2]);
+	    TM_USART_Puts(USART3, range);
+
+
+    if (data[2] > emty_bar_offset) {
+        
+	TM_USART_Puts(USART3, "Bar is emty\n\r");
+        }
+    else if (data[2] < emty_bar_offset) {
+        
+	TM_USART_Puts(USART3, "Bar is full\n\r");
+	}
             /* Clear interrupt flag */
             EXTI_ClearITPendingBit(EXTI_Line0);
-        }
+    }
 }
 
 /* Handle PB12 interrupt */

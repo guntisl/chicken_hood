@@ -40,19 +40,17 @@ ces on 1wire bus
 
 #include "tm_stm32f4_i2c.h"
 
-/* Slave address */
-#define ADDRESS		0xE0  // 1101 000 0 - left aligned 7-bit address
 /* How many sensors we are expecting on 1wire bus? */
 #define EXPECTING_SENSORS     1	
 
 
-uint32_t volatile ConvertedValue = 0; //Converted value readed from ADC
+uint32_t volatile light_offset, temp_offset, emty_bar_offset, water_level_offset, humidity_offset;
 uint32_t volatile ConvertedValueOffset = 0;
 uint32_t volatile day_time = 1;
 uint32_t volatile night_time = 1;
 uint32_t volatile time_mode = 1;
-uint32_t volatile Value_Offset = 0;
-uint16_t volatile ADC3ConvertedValue[5] = {0,0,0,0,0};
+uint32_t volatile heating_on, heating_off, heating_mode, heating_offset, Value_Offset;
+//uint16_t volatile ADC3ConvertedValue[5] = {0,0,0,0,0};
 
 
 void EXTI0_IRQHandler();
@@ -60,10 +58,9 @@ void EXTI15_10_IRQHandler();
 
 
 int main(void) {
-	char buf[40], range[40];
-	uint16_t tempvalue, devices, i, j, count, alarm_count;
-	uint8_t device[EXPECTING_SENSORS][8];
-	uint8_t alarm_device[EXPECTING_SENSORS][8];
+	char buf[40];
+	uint16_t light_value, tempvalue, devices, i, j, count, alarm_count;
+	uint8_t device[EXPECTING_SENSORS][8], alarm_device[EXPECTING_SENSORS][8];
 	float temps[EXPECTING_SENSORS];
 	
 	
@@ -86,39 +83,9 @@ int main(void) {
 	/* Initialize I2C, SCL: PB6 and SDA: PB7 with 100kHt serial clock */
 	TM_I2C_Init(I2C1, TM_I2C_PinsPack_1, 100000);
 
-	uint8_t data[3];
-	TM_I2C_Write(I2C1, ADDRESS, 0x00, 0x51);
-	
-	Delayms(70);
-//	data[0] = TM_I2C_Read(I2C1, ADDRESS, 0);
-    
-	data[0] = TM_I2C_Read(I2C1, ADDRESS, 1);
-    data[1] = TM_I2C_Read(I2C1, ADDRESS, 2);
-    data[2] = TM_I2C_Read(I2C1, ADDRESS, 3);
-    sprintf(range, "Light = %d , H Range = %d , L Range %d \n\r", data[0], data[1], data[2]);
-	TM_USART_Puts(USART3, range);
-    /**
-	TM_I2C_Write(I2C1, ADDRESS, 0x01, 31);
-	 * Write multi bytes to slave with address ADDRESS
-	 * Write to registers starting from 0x00, get data in variable "data" and write 3 bytes
-	 */
-//	TM_I2C_WriteMulti(I2C1, ADDRESS, 0x01, data, 3);
-	
-	/* Read single byte from slave with 0xD0 (1101 000 0) address and register location 0x00 */
-//	data[0] = TM_I2C_Read(I2C1, ADDRESS, 0x01);
-	
-	/**
-	 * Read 3 bytes of data from slave with 0xD0 address
-	 * First register to read from is at 0x00 location 
-	 * Store received data to "data" variable
-	 */
-//	TM_I2C_ReadMulti(I2C1, 0xE0, 0x01, data, 3);
-	
-    /* Initialize Leds */
-	//TM_DISCO_LedInit();
 	
 	/* Turn leds on */
-//	TM_DISCO_LedOn(LED_ALL);
+	TM_DISCO_LedOn(LED_ALL);
 	
 	/* Checks for any device on 1-wire */
 	count = 0;
@@ -151,7 +118,7 @@ int main(void) {
 			TM_USART_Puts(USART3, "\n");
 		}
 	} else {
-		TM_USART_Puts(USART3, "No devices ia all at aaallll on OneWire.\n\r");
+		TM_USART_Puts(USART3, "No devices on OneWire.\n\r");
 
         TM_DISCO_LedOff(LED_RED);
         TM_DISCO_LedOff(LED_BLUE);
@@ -182,20 +149,9 @@ Doors_Init(OutsideDoor);
 Configure_PA0();
 Configure_PB12();
 
-	while (1) {
+while (1) {
 
 
-	TM_I2C_Write(I2C1, ADDRESS, 0x00, 0x51);
-
-	Delayms(70);
-	data[0] = TM_I2C_Read(I2C1, ADDRESS, 1);
-    
-    data[1] = TM_I2C_Read(I2C1, ADDRESS, 2);
-    
-    data[2] = TM_I2C_Read(I2C1, ADDRESS, 3);
-    
-    sprintf(range, "Light = %d , H Range = %d , L Range %d \n\r", data[0], data[1], data[2]);
-	TM_USART_Puts(USART3, range);
     
     /* Start temperature conversion on all devices on one bus */
 		TM_DS18B20_StartAll(&OneWire1);
@@ -209,15 +165,11 @@ Configure_PB12();
 			if (TM_DS18B20_Read(&OneWire1, device[i], &temps[i])) {
 		       
 
-tempvalue = *temps;
-
-// Print as parts, note that you need 0-padding for fractional bit.
-//
-       tempvalue = *temps;
-      sprintf(buf,"Temp: %d temperatūra = %u\n\r",i,tempvalue); 
+                tempvalue = *temps;
+                sprintf(buf,"Temp: %d temperatūra = %u\n\r",i,tempvalue); 
                 /* Print temperature */
 				TM_USART_Puts(USART3, buf);
-			} else {
+		    } else {
 				/* Reading error */
 				TM_USART_Puts(USART3, "Reading error;\n");
 
@@ -253,14 +205,11 @@ tempvalue = *temps;
 			TM_USART_Puts(USART3, "ALARM devices recognized!\n\r");
 		}
 		
-		/* Print separator */
-		TM_USART_Puts(USART3, "----------\n\r");
+	/* Print separator */
+	TM_USART_Puts(USART3, "----------\n\r");
 		
-		/* Some delay */
-		Delayms(1000);
-
-
-
+	/* Some delay */
+	Delayms(1000);
 
     uint32_t volatile *day_time_pointer;
     day_time_pointer = &day_time;
@@ -274,34 +223,83 @@ tempvalue = *temps;
     uint32_t volatile *Value_Offset_pointer;
     Value_Offset_pointer = &Value_Offset;
 
+    temp_offset = ADC3ConvertedValue[0];
+    light_offset = ADC3ConvertedValue[1];
+    light_value = ADC3ConvertedValue[2];
+    emty_bar_offset = ADC3ConvertedValue[3];
+    water_level_offset = ADC3ConvertedValue[4];
+    ConvertedValueOffset = light_value + *Value_Offset_pointer;
 
-    ConvertedValue = ADC3ConvertedValue[1];
-    ConvertedValueOffset = ConvertedValue + *Value_Offset_pointer;
-    
-    if (ConvertedValueOffset > 2900)
-        {
+    if (ConvertedValueOffset > light_offset) {
 
         *time_mode_pointer = 1;
-        if (((*time_mode_pointer) == 1) && ((*day_time_pointer) == 1) ) 
-            {
+        if (((*time_mode_pointer) == 1) && ((*day_time_pointer) == 1) )  {
             Doors_Open(FrontDoor);
+
+			TM_USART_Puts(USART3, "It is a day!\n\r");
+			TM_USART_Puts(USART3, "Doors start opening\n\r");
             *day_time_pointer = 0;
             *night_time_pointer = 1;
             *Value_Offset_pointer = 100;
-            }
         }
-    else if (ConvertedValueOffset < 2900)
-        {
+    } else if (ConvertedValueOffset < light_offset) {
         
-        *time_mode_pointer = 0;
-        if ((*time_mode_pointer == 0) && (*night_time_pointer == 1) ) 
-            {
-            Doors_Open(OutsideDoor);
-            *time_mode_pointer = 1;
-            *day_time_pointer = 1;
-            *night_time_pointer = 0;
-            *Value_Offset_pointer = -100;
-            }
+             *time_mode_pointer = 0;
+             if ((*time_mode_pointer == 0) && (*night_time_pointer == 1) )  {
+             
+			    TM_USART_Puts(USART3, "It is a night!\n\r");
+			    TM_USART_Puts(USART3, "Doors start closing\n\r");
+                Doors_Open(OutsideDoor);
+                *time_mode_pointer = 1;
+                *day_time_pointer = 1;
+                *night_time_pointer = 0;
+                *Value_Offset_pointer = -100;
+             }
+
+    }
+
+    uint32_t volatile *heating_on_pointer;
+    heating_on_pointer = &heating_on;
+
+    uint32_t volatile *heating_off_pointer;
+    heating_off_pointer = &heating_off;
+
+    uint32_t volatile *heating_mode_pointer;
+    heating_mode_pointer = &heating_mode;
+
+    uint32_t volatile *heating_offset_pointer;
+    heating_offset_pointer = &heating_offset;
+
+
+    uint32_t volatile temp_converted_value_offset = 0;
+    temp_converted_value_offset = tempvalue + *heating_offset_pointer;
+    if (tempvalue > temp_offset) {
+
+        *heating_mode_pointer = 1;
+        if (((*heating_mode_pointer) == 1) && ((*heating_on_pointer) == 1) )  {
+            Doors_Open(FrontDoor);
+
+		   TM_USART_Puts(USART3, "water is cold!\n\r");
+		   TM_USART_Puts(USART3, "start heating!\n\r");
+
+            *heating_on_pointer = 0;
+            *heating_off_pointer = 1;
+            *heating_offset_pointer = 3;
+        }
+    } else if (temp_converted_value_offset < temp_offset) {
+        
+             *heating_mode_pointer = 0;
+             if ((*heating_mode_pointer == 0) && (*heating_off_pointer == 1) )  {
+                Doors_Open(OutsideDoor);
+
+		        TM_USART_Puts(USART3, "water is warm!\n\r");
+		        TM_USART_Puts(USART3, "stop heating!\n\r");
+
+                *heating_mode_pointer = 1;
+                *heating_on_pointer = 1;
+                *heating_off_pointer = 0;
+                *heating_offset_pointer = -3;
+             }
 	}
 }
 
